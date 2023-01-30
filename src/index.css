@@ -1,0 +1,226 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font: inherit;
+}
+
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.slick-slide {
+  padding: 0 0.4rem;
+  outline: none;
+}
+
+@layer base {
+  * {
+    @apply text-base sm:text-lg;
+  }
+
+  ::-webkit-scrollbar {
+    @apply bg-light dark:bg-dark w-2;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    @apply bg-light_gray rounded-full;
+  }
+
+  html {
+    font-family: "Quicksand", sans-serif;
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-light text-dark dark:bg-dark dark:text-white;
+    min-height: 100vh;
+  }
+
+  img,
+  picture,
+  svg,
+  video {
+    display: block;
+    max-width: 100%;
+  }
+
+  h1 {
+    @apply text-3xl sm:text-6xl;
+  }
+
+  h2 {
+    @apply text-2xl;
+  }
+
+  h3 {
+    @apply text-xl;
+  }
+
+  span {
+    @apply text-sm sm:text-base;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply bg-light_gray border border-light_gray dark:border-light text-light dark:bg-light dark:text-dark font-semibold w-fit rounded-xl px-2 py-1;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-light dark:bg-accent font-semibold w-fit rounded-xl px-2 py-1;
+  }
+
+  .btn-accent.btn-hover {
+    @apply hover:bg-light hover:text-accent dark:hover:bg-dark dark:hover:text-accent transition-colors;
+  }
+
+  .btn-primary.btn-hover {
+    @apply hover:bg-light hover:text-light_gray dark:hover:bg-dark dark:hover:text-light dark:hover:border-light transition-colors;
+  }
+
+  .btn-secondary {
+    @apply bg-light text-light_gray border border-light_gray dark:border-light dark:bg-dark dark:text-light font-semibold w-fit rounded-xl px-2 py-1;
+  }
+
+  .categories__container::-webkit-scrollbar {
+    @apply hidden;
+  }
+
+  .course {
+    @apply relative flex-col max-w-md max-h-64 rounded-lg;
+    filter: grayscale(100%);
+  }
+
+  .course__overlay {
+    @apply flex flex-col opacity-0 absolute px-2 py-4 bg-light/90 dark:bg-dark/90 top-0 bottom-0 left-[40%] right-0 rounded-lg shadow-sm shadow-dark;
+    transition: opacity 0.2s ease-in-out;
+  }
+
+  .course:hover {
+    @apply filter-none;
+  }
+
+  .course:hover .course__overlay {
+    @apply opacity-100;
+  }
+
+  .curve-bg {
+    background: url(curveLine.svg) no-repeat right top;
+  }
+
+  .experience {
+    @apply flex flex-col md:w-[70%];
+  }
+
+  .experience:nth-child(even) {
+    @apply ml-auto items-end text-end;
+  }
+
+  .experience:nth-child(even) .experience_date {
+    @apply -order-1;
+  }
+
+  .experience_skills {
+    @apply flex flex-col gap-2 my-4;
+  }
+
+  .experience:nth-child(even) .experience_skills {
+    @apply items-end;
+  }
+
+  .picture {
+    @apply w-56 2xl:w-72 aspect-square;
+    background: url(assets/me.png) no-repeat center;
+    scale: 1.2;
+    background-size: cover;
+    border-radius: 50%;
+  }
+
+  .projects__container {
+    @apply gap-8 flex flex-wrap justify-center items-center;
+  }
+
+  .project {
+    @apply rounded-lg relative;
+    flex-basis: 32rem;
+  }
+
+  .project:hover .project__image {
+    @apply filter-none;
+    scale: 1.1;
+  }
+
+  .project:hover .project__name * {
+    @apply block;
+  }
+
+  .project__name * {
+    @apply hidden;
+  }
+
+  .project__image {
+    @apply rounded-lg;
+    filter: grayscale(100%);
+    transition: scale 0.2s ease-in;
+  }
+
+  .section {
+    @apply mx-0 md:mx-12 lg:mx-16 xl:mx-48 p-4;
+  }
+
+  .skill__container {
+    @apply relative;
+  }
+
+  .skill__name {
+    @apply bg-light/80 dark:bg-dark/80 text-[.75rem] sm:text-base md:text-lg text-dark dark:text-light px-2 py-1 rounded-lg font-bold opacity-0 absolute top-[50%] left-[50%] translate-y-[-50%]  translate-x-[-50%] shadow-sm shadow-black;
+    transition: opacity 0.2s ease;
+  }
+
+  .skill__container:hover .skill__name {
+    @apply opacity-100;
+  }
+
+  .social-media-button {
+    @apply w-6;
+  }
+}
+
+@layer utilities {
+  .external-link {
+    @apply underline;
+  }
+
+  .icon {
+    @apply hover:scale-110 transition-transform;
+  }
+
+  .pre-line {
+    @apply relative pl-8 sm:pl-16;
+  }
+
+  .text__secondary {
+    @apply text-light_gray dark:text-light;
+  }
+
+  .pre-line::before {
+    @apply bg-accent w-4 sm:w-12;
+    content: "";
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+    height: 0.1rem;
+  }
+}
