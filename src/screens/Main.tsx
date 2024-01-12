@@ -1,5 +1,6 @@
-import { KeyboardArrowDown } from "@mui/icons-material";
+import { KeyboardArrowDown, PictureAsPdf } from "@mui/icons-material";
 import { Networking, Picture } from "components";
+import cv from 'docs/Curriculum Vitae.pdf';
 
 const Main = () => {
 	return (
@@ -27,10 +28,16 @@ const Main = () => {
 								As a skilled and adaptable Software Engineer, I bring a strong foundation in coding, problem-solving and teamwork to drive innovative results. With a commitment to precision and attention to detail, I focus on delivering high-quality software solutions that meet user needs and business objectives collaborating effectively with cross-functional teams.
 							</p>
 						</div>
-						<a className="btn-secondary px-6 py-4 flex items-center gap-4" href="#projects">
-							Check out my work!
-							<KeyboardArrowDown />
-						</a>
+						<div className="mt-2 flex flex-wrap items-stretch gap-2">
+							<a className="btn-secondary px-6 py-4 flex items-center gap-4" href="#projects">
+								Check out my work!
+								<KeyboardArrowDown />
+							</a>
+							<a className="border border-secondary rounded-lg px-6 py-4 flex items-center gap-2" href={ cv } download="Curriculum Vitae - Juan David Soto">
+								Download CV
+								<PictureAsPdf className="text-red-700" />
+							</a>
+						</div>
 					</div>
 					<div className="hidden lg:block w-56 2xl:w-72">
 						<Picture />
