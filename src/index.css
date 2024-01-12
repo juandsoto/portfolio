@@ -86,12 +86,12 @@
 	}
 
 	.course__overlay {
-		@apply flex flex-col opacity-0 absolute px-2 py-4 bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-transparent;
+		@apply pointer-events-none flex flex-col opacity-0 absolute px-2 py-4 bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-transparent;
 		transition: opacity 0.2s ease-in-out;
 	}
 
 	.course:hover .course__overlay {
-		@apply opacity-100;
+		@apply opacity-100 pointer-events-auto;
 	}
 
 	.curve-bg {

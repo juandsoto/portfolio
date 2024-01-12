@@ -28,7 +28,7 @@ function Header() {
 	return (
 		<div className={ ["fixed z-40 left-1/2 -translate-x-1/2 w-full bg-light dark:bg-dark", isScrolled && 'shadow dark:shadow-gray-900'].join(' ') }>
 			{ breakpoint.sm() ? (
-				<div className="section">
+				<div className="section max-w-6xl">
 					<div className="flex justify-between items-center">
 						{ isMenuOpen ? (
 							<Close className="icon mb-1 cursor-pointer" onClick={ toggleMenu } />
@@ -76,7 +76,7 @@ function Header() {
 					</div>
 				</div>
 			) : (
-				<div className="section flex justify-between items-center">
+				<div className="section max-w-6xl mx-auto flex justify-between items-center">
 					<div className="w-8">
 						<a href="#"><HomeOutlined className="text-secondary" fontSize="medium" /></a>
 					</div>
