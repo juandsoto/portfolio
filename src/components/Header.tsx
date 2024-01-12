@@ -61,16 +61,16 @@ function Header() {
 					>
 						<ul className="flex flex-col mobile-breakpoint:flex-row items-center gap-6">
 							<li>
-								<a href="#experience">Experience</a>
+								<a href="#experience" onClick={ toggleMenu }>Experience</a>
 							</li>
 							<li>
-								<a href="#skills">Skills</a>
+								<a href="#skills" onClick={ toggleMenu }>Skills</a>
 							</li>
 							<li className="btn-secondary px-2 py-1">
-								<a href="#projects">Personal Projects</a>
+								<a href="#projects" onClick={ toggleMenu }>Personal Projects</a>
 							</li>
 							<li>
-								<a href="#certificates">Certificates</a>
+								<a href="#certificates" onClick={ toggleMenu }>Certificates</a>
 							</li>
 						</ul>
 					</div>
