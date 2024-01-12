@@ -1,3 +1,3 @@
-type TCategory = "web" | "frontend" | "backend" | "AI" | "game";
+type TCategory = "web" | "mobile" | "AI" | "cms" | "game";
 
 export default TCategory;
