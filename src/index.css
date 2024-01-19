@@ -43,7 +43,7 @@
 	}
 
 	body {
-		@apply bg-light text-dark dark:bg-dark dark:text-white;
+		@apply bg-light text-black dark:bg-dark dark:text-white;
 		min-height: 100vh;
 	}
 
@@ -74,7 +74,7 @@
 
 @layer components {
 	.btn-secondary {
-		@apply bg-secondary text-light border border-secondary font-semibold w-fit rounded-xl px-2 py-1 hover:bg-light hover:text-secondary dark:text-dark dark:hover:bg-dark dark:hover:text-secondary transition-colors;
+		@apply bg-secondary text-light border border-secondary font-semibold w-fit rounded-xl px-2 py-1 hover:bg-light hover:text-secondary dark:text-black dark:hover:bg-dark dark:hover:text-secondary transition-colors;
 	}
 
 	.categories__container::-webkit-scrollbar {
@@ -86,7 +86,7 @@
 	}
 
 	.course__overlay {
-		@apply pointer-events-none flex flex-col opacity-0 absolute px-2 py-4 bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-transparent;
+		@apply pointer-events-none flex flex-col opacity-0 absolute px-2 py-4 bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-gray-700;
 		transition: opacity 0.2s ease-in-out;
 	}
 
@@ -147,7 +147,7 @@
 	}
 
 	.skill__name {
-		@apply bg-light/80 dark:bg-dark/80 text-[.75rem] sm:text-base md:text-lg text-dark dark:text-light px-2 py-1 rounded-lg font-bold opacity-0 absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] shadow-sm shadow-black;
+		@apply bg-light/80 dark:bg-dark/80 text-[.75rem] sm:text-base md:text-lg text-black dark:text-light px-2 py-1 rounded-lg font-bold opacity-0 absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] shadow-sm shadow-black;
 		transition: opacity 0.2s ease;
 	}
 

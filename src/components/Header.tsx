@@ -26,7 +26,7 @@ function Header() {
 	}, []);
 
 	return (
-		<div className={ ["fixed z-40 left-1/2 -translate-x-1/2 w-full bg-light dark:bg-dark", isScrolled && 'shadow dark:shadow-gray-900'].join(' ') }>
+		<div className={ ["fixed z-40 left-1/2 -translate-x-1/2 w-full bg-light dark:bg-dark", isScrolled && 'shadow dark:shadow-gray-700'].join(' ') }>
 			{ breakpoint.sm() ? (
 				<div className="section max-w-6xl">
 					<div className="flex justify-between items-center">

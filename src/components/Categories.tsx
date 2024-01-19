@@ -11,7 +11,7 @@ const Categories = () => {
 					<li key={ category }>
 						<button
 							className={ isSelected
-								? 'flex-1 capitalize font-semibold w-fit rounded-xl px-2 py-1 border bg-secondary border-secondary text-light dark:text-dark transition-colors'
+								? 'flex-1 capitalize font-semibold w-fit rounded-xl px-2 py-1 border bg-secondary border-secondary text-light dark:text-black transition-colors'
 								: 'flex-1 capitalize font-semibold w-fit rounded-xl px-2 py-1 border bg-light border-secondary text-secondary dark:bg-dark dark:text-secondary transition-colors' }
 							onClick={ () => toggleSelectedProjectCategories(category) }
 						>

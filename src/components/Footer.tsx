@@ -7,6 +7,9 @@ function Footer() {
 			</span>
 			<ul className="flex flex-col xs:flex-row items-center justify-center gap-4 text-sm sm:text-base mt-3 sm:mt-0 whitespace-nowrap">
 				<li>
+					<a href="#" className="hover:underline">Home</a>
+				</li>
+				<li>
 					<a href="#experience" className="hover:underline">Experience</a>
 				</li>
 				<li>

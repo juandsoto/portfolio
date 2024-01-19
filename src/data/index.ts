@@ -201,10 +201,6 @@ export const skills: ISkill[] = [
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/framer-motion_zrvzja.svg",
 	},
 	{
-		name: "ExpressJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016641/portfolio/skills/expressjs_lulge0.svg",
-	},
-	{
 		name: "Css",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016641/portfolio/skills/css_nkwcyc.svg",
 	},

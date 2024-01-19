@@ -9,7 +9,7 @@ module.exports = {
 				"xs": "384px"
 			},
 			colors: {
-				dark: "#121212",
+				dark: "#191A1E",
 				secondary: "#825fe9",
 				light: "#eee",
 			},
