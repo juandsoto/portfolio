@@ -228,7 +228,15 @@ export const skills: ISkill[] = [
 
 export const courses: ICourse[] = [
 	{
-		id: 1,
+		id: 10,
+		name: "Flutter Móvil: De cero a experto",
+		image: "https://import.cdn.thinkific.com/cdn-cgi/image/width=380,onerror=redirect/643563/courses/2177248/nBJfYecrQWmUQyxveZRo_FLUTTER-NEW-COVER.jpg",
+		platform: "https://res.cloudinary.com/dcaythx6e/image/upload/v1716995082/portfolio/DMpsgyZ4_400x400_sf5550.jpg",
+		course_link: "https://cursos.devtalles.com/courses/flutter-movil-cero-a-experto",
+		certificate_link: "https://cursos.devtalles.com/certificates/jzih4vuxks",
+	},
+	{
+		id: 9,
 		name: "React PRO: Lleva tus bases al siguiente nivel",
 		image: "https://img-c.udemycdn.com/course/480x270/4301065_2e02.jpg",
 		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
@@ -236,7 +244,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.udemy.com/certificate/UC-a9d86812-012d-4fa5-b6ef-787382ba81f2/",
 	},
 	{
-		id: 2,
+		id: 8,
 		name: "Talento JuvenTIC",
 		image: "https://talento.juventic.co/images/logo-talento.png",
 		platform: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705092207/portfolio/rhlbrry4saye0ljnearg.png",
@@ -244,7 +252,7 @@ export const courses: ICourse[] = [
 		certificate_link: "",
 	},
 	{
-		id: 3,
+		id: 7,
 		name: "Angular: De cero a experto",
 		image: "https://img-c.udemycdn.com/course/480x270/3662358_4d6e.jpg",
 		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
@@ -252,7 +260,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.udemy.com/certificate/UC-46e79e7d-a1a5-40cf-af3a-2ba8bd5062bb/",
 	},
 	{
-		id: 4,
+		id: 6,
 		name: "Node: De cero a experto",
 		image: "https://img-c.udemycdn.com/course/480x270/1562070_d426_3.jpg",
 		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
@@ -268,7 +276,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.udemy.com/certificate/UC-7b65f8fe-88bc-4ecc-8c08-1c9b7ccfccdf/",
 	},
 	{
-		id: 6,
+		id: 4,
 		name: "Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero",
 		image: "https://img-c.udemycdn.com/course/480x270/2516170_d229_2.jpg",
 		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
@@ -276,7 +284,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.udemy.com/certificate/UC-78318b3e-96ae-43dc-b2ec-8004edea7d14/",
 	},
 	{
-		id: 7,
+		id: 3,
 		name: "Combinatorics and Probability",
 		image:
 			"https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/98/8fb81076a011e79d073ba265e37f90/logo_comb_800x800.png",
@@ -285,7 +293,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.coursera.org/account/accomplishments/verify/Q2KTSGRX7ZYK",
 	},
 	{
-		id: 8,
+		id: 2,
 		name: "Introduction to Graph Theory",
 		image:
 			"https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ee/7e3b00762f11e789d3c9a04c0e14ee/logo_graphs_800x800-1.png",
@@ -294,7 +302,7 @@ export const courses: ICourse[] = [
 		certificate_link: "https://www.coursera.org/account/accomplishments/verify/3ZN5JGMBCQTG",
 	},
 	{
-		id: 9,
+		id: 1,
 		name: "Java Programming for Complete Beginners",
 		image: "https://img-c.udemycdn.com/course/480x270/1535678_0ce9_7.jpg",
 		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",

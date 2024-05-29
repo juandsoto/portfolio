@@ -14,7 +14,7 @@ const Course = ({ course }: Props) => {
 			</div>
 			<div className="course__overlay">
 				<div className="w-6 sm:w-8 aspect-square bg-light p-1 absolute z-50 rounded-full top-0 translate-y-[-50%] right-0 translate-x-[50%] shadow-sm shadow-dark">
-					<img className="object-contain h-full w-full" src={ platform } alt={ `${name} - platform` } />
+					<img className="object-contain h-full w-full rounded-full" src={ platform } alt={ `${name} - platform` } />
 				</div>
 				<div className="flex-1 flex flex-col gap-4 justify-center items-center">
 					<h4 className="hidden xs:block text-center font-bold text-base sm:text-lg">{ name }</h4>

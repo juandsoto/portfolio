@@ -1,6 +1,6 @@
 import { KeyboardArrowDown, PictureAsPdf } from "@mui/icons-material";
 import { Networking, Picture } from "components";
-import cv from 'docs/Curriculum Vitae.pdf';
+import cv from 'docs/resume.pdf';
 
 const Main = () => {
 	return (
@@ -25,7 +25,9 @@ const Main = () => {
 								<span className="font-bold text-lg pr-2">Hi!</span>I'm Juan David.
 							</p>
 							<p>
-								As a skilled and adaptable Software Engineer, I bring a strong foundation in coding, problem-solving and teamwork to drive innovative results. With a commitment to precision and attention to detail, I focus on delivering high-quality software solutions that meet user needs and business objectives collaborating effectively with cross-functional teams.
+								Systems Engineer from Universidad del Valle with over a year of hands-on experience in web development, specializing in technologies such as React.js, TypeScript, and Node.js.
+								<br />
+								With a solid foundation in coding, problem-solving, and teamwork, I am dedicated to driving innovative results. My commitment to precision and attention to detail ensures the delivery of high-quality software solutions that meet both user needs and business objectives. I excel in collaborating effectively with cross-functional teams to achieve project goals.
 							</p>
 						</div>
 						<div className="mt-2 flex flex-wrap items-stretch gap-2">
