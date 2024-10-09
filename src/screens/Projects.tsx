@@ -24,7 +24,7 @@ const Projects = () => {
 			<div className="flex justify-center">
 				<Categories />
 			</div>
-			<div className="projects__container">
+			<div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
 				{ filteredProjects.length ? (
 					filteredProjects.map(project => <Project key={ project.id } project={ project } />)
 				) : (

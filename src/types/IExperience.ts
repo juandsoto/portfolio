@@ -6,8 +6,7 @@ interface IExperience {
 	roles: Role[];
 	description: string;
 	tools: string[];
-	startDate: string;
-	endDate: string;
+	logoClassName?: string;
 }
 
 interface Role {

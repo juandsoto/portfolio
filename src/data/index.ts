@@ -1,8 +1,41 @@
 import { ICourse, IExperience, IProject, ISkill, TCategory } from "types";
 
-export const categories: TCategory[] = ["web", "AI", "mobile", "game", "cms"];
+export const categories: TCategory[] = ["web", "AI", "game", "cms", 'optimization'];
 
 export const experiences: IExperience[] = [
+	{
+		id: 4,
+		company: "Tanok Tech",
+		company_link: "https://www.linkedin.com/company/tanok-tech/",
+		image:
+			"https://res.cloudinary.com/dcaythx6e/image/upload/v1728513630/portfolio/transsforma_coaching_logo-removebg-preview_gqofkh.png",
+		roles: [
+			{ name: "Junior Fullstack Developer", startDate: "May 2024", endDate: "November 2024" },
+		],
+		description: `
+			Implementation of UI modules for the internal management web
+			application of a recycling company. Use of technologies such as
+			Nextjs, Prisma, YouTrack, Figma and PostgreSQL.`,
+		tools: ["Nextjs", "Prisma", "YouTrack", "Figma", "PostgreSQL", "Typescript"],
+		logoClassName: 'bg-dark'
+	},
+	{
+		id: 5,
+		company: "ByLogic",
+		company_link: "https://www.bylogic.co/",
+		image:
+			"https://res.cloudinary.com/dcaythx6e/image/upload/v1728512572/portfolio/bylogiclogo_u4sswv.svg",
+		roles: [
+			{ name: "Software Engineer", startDate: "July 2023", endDate: "" },
+		],
+		description: `
+			● Development of a trading broker platform as well as a comprehensive management application for administrators to
+			control critical data. User authentication, account resources through web3 technologies. The platform was built using ReactJS, Expressjs, AWS and the TradingView API.</br>
+			● Mobile application as a trip planning tool using AI to create custom itineraries based on user preferences and their actual profile
+			configuration. Use of React Native, Expressjs, AWS and OpenAI.`,
+		tools: ["ReactJS", "Expressjs", "AWS", "React Native", "OpenAI", "Typescript"],
+		logoClassName: 'bg-dark dark:bg-transparent'
+	},
 	{
 		id: 3,
 		company: "Holcim ADC",
@@ -10,14 +43,15 @@ export const experiences: IExperience[] = [
 		image:
 			"https://res.cloudinary.com/dcaythx6e/image/upload/v1705083633/portfolio/bk55kuufc8nbs93swuwk.svg",
 		roles: [
-			{ name: "Trainee Engineer", startDate: "2024-01-09T00:00:00.000Z", endDate: "" },
-			{ name: "Intern", startDate: "2023-07-10T00:00:00.000Z", endDate: "2024-01-09T00:00:00.000Z" }
+			{ name: "Trainee Engineer", startDate: "January 2024", endDate: "July 2024" },
+			{ name: "Intern", startDate: "July 2023", endDate: "January 2024" }
 		],
-		description:
-			"I have the opportunity to work in projects that teach me not just technical skills but general knowlegde about different processes such as billing, product delivery and much more. Currently I am working in a billing system for the clients to pay for the products Holcim sale.",
+		description: `
+			● Backend development using Java Spring Boot, handling payment transactions and related functions as well as implementing unit and integration tests to ensure its reliability.</br>
+			● Enhancement of Next.js-based web interfaces.</br>
+			● Refactoring Nodejs applications making use of AWS Lambda, S3, Api Gateway.`,
 		tools: ["Java", "Spring Boot", "AWS", "GitLab", "Nodejs", "Typescript", "Scrum"],
-		startDate: "2023-07-10T00:00:00.000Z",
-		endDate: "",
+		logoClassName: 'dark:bg-light'
 	},
 	{
 		id: 1,
@@ -26,13 +60,14 @@ export const experiences: IExperience[] = [
 		image:
 			"https://res.cloudinary.com/dcaythx6e/image/upload/v1705083540/portfolio/y6gaazp7sidxsmu2rjcb.png",
 		roles: [
-			{ name: "Trainee Engineer", startDate: "2022-09-19T00:00:00.000Z", endDate: "2022-10-15T00:00:00.000Z" },
+			{ name: "Trainee Engineer", startDate: "September 2022", endDate: "October 2022" },
 		],
-		description:
-			`Development of web application for Ensolvers' employee management.\n\n ● Focused on developing a dedicated component within the application for tracking and managing off. ● Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
+		description: `
+			Development of web application for Ensolvers' employee management.</br></br>
+			● Focused on developing a dedicated component within the application for tracking and managing off.</br>
+			● Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
 		tools: ["react", "typescript", "scrum"],
-		startDate: "2022-09-19T00:00:00.000Z",
-		endDate: "2022-10-15T00:00:00.000Z",
+		logoClassName: 'dark:bg-light'
 	},
 	{
 		id: 2,
@@ -40,16 +75,35 @@ export const experiences: IExperience[] = [
 		company_link: "https://www.univalle.edu.co/",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672955329/portfolio/univalle_tt2gvo.png",
 		roles: [
-			{ name: "Software Engineering", startDate: "2019-05-01T00:00:00.000Z", endDate: "" },
+			{ name: "Software Engineering", startDate: "May 2019", endDate: "November 2024" },
 		],
 		description: "I am a software engineer with a five-year education from Universidad del Valle. This esteemed institution provided me with a comprehensive understanding of software development, covering diverse programming languages and cutting-edge technologies. The hands-on approach to problem-solving and collaborative projects during my time at the university has fueled my passion for coding.",
 		tools: [],
-		startDate: "2019-05-01T00:00:00.000Z",
-		endDate: "2024-12-01T00:00:00.000Z",
+		logoClassName: 'dark:bg-light'
 	},
 ];
 
 export const projects: IProject[] = [
+	{
+		id: 8,
+		title: "medical image processing",
+		description: "Webapp for applying segmentation algorithms to magnetic resonance images for helping disease detection, diagnosis, and treatment monitoring.",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514743/portfolio/Captura_de_pantalla_2024-05-07_190937_ylbbgu.png",
+		repository: "https://github.com/juandsoto/procesamiento-de-imagenes-medicas",
+		deployment: "",
+		tags: ["web"],
+		tools: ["python", "tailwindcss", "typescript", "react"],
+	},
+	{
+		id: 7,
+		title: "constraint programming",
+		description: "Application for optimizing costs for the recording of actors scenes in a movie. The solution is found based on constraints using the Minizinc programming language",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514748/portfolio/WhatsApp_Image_2024-10-09_at_17.57.48_qkodma.jpg",
+		repository: "https://github.com/juandsoto/proyecto-PPR",
+		deployment: "",
+		tags: ["optimization", "web"],
+		tools: ["minizinc", "tailwindcss", "typescript", "react"],
+	},
 	{
 		id: 1,
 		title: "war horses",

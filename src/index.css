@@ -118,10 +118,6 @@
 		border-radius: 50%;
 	}
 
-	.projects__container {
-		@apply gap-8 flex flex-wrap justify-center items-center;
-	}
-
 	.project {
 		@apply rounded-lg relative;
 		flex-basis: 32rem;

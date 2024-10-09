@@ -11,8 +11,8 @@ const Project = ({ project }: ProjectProps) => {
 	const { id, image, title } = project;
 	return (
 		<motion.div className="project cursor-pointer" layoutId={ id.toString() } onClick={ () => setShowProjectId(id) }>
-			<div className="overflow-hidden rounded-lg">
-				<img className="project__image" src={ image } alt={ title } />
+			<div className="overflow-hidden rounded-lg h-full w-full">
+				<img className="project__image h-full w-full object-cover" src={ image } alt={ title } />
 			</div>
 		</motion.div>
 	);

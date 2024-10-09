@@ -18,11 +18,11 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 		>
 			<motion.div
 				onClick={ e => e.stopPropagation() }
-				className="relative max-w-screen-xl w-[95vw] sm:w-[85vw] md:w-[65vw] lg:w-[90vw] 2xl:w-[80vw] max-h-screen flex flex-col lg:flex-row rounded-lg bg-light shadow-sm dark:shadow-gray-700 dark:bg-dark"
+				className="relative max-w-screen-xl w-[95vw] sm:w-[85vw] md:w-[65vw] lg:w-[90vw] 2xl:w-[80vw] min-h-[70vh] max-h-screen flex flex-col lg:flex-row rounded-lg bg-light shadow-sm dark:shadow-gray-700 dark:bg-dark"
 				layoutId={ project.id.toString() }
 			>
-				<div className="aspect-video rounded-t-lg lg:rounded-lg flex self-stretch">
-					<img className="object-cover rounded-t-lg lg:rounded-lg" src={ image } alt={ title } />
+				<div className="w-full lg:w-2/3 aspect-video rounded-t-lg lg:rounded-lg flex self-stretch">
+					<img className="w-full object-cover rounded-t-lg lg:rounded-lg" src={ image } alt={ title } />
 				</div>
 				<div className="absolute top-0 translate-y-[-50%] right-2 flex items-center gap-2">
 					<a className="icon cursor-pointer" href={ repository } target="_blank">
@@ -32,10 +32,10 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 						Open
 					</a>
 				</div>
-				<div className="flex flex-col px-4 py-2">
+				<div className="flex-1 w-full lg:w-1/3 flex flex-col px-4 py-2">
 					<h4 className="capitalize text-lg font-bold">{ title }</h4>
 					<div className="flex flex-col gap-4 mb-4">
-						<p className="lg:max-w-6xl xl:max-w-4xl max-h-60 text-justify">{ description }</p>
+						<p className="lg:max-w-6xl xl:max-w-4xl max-h-60">{ description }</p>
 						<div className="flex flex-col gap-1">
 							<span className="font-semibold">Development tools</span>
 							<ul className="flex flex-wrap items-center gap-1 capitalize leading-4">
