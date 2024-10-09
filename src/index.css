@@ -82,11 +82,11 @@
 	}
 
 	.course {
-		@apply relative flex-col max-w-md max-h-64 rounded-lg;
+		@apply relative flex-col rounded-lg bg-dark/5 dark:bg-light/5;
 	}
 
 	.course__overlay {
-		@apply pointer-events-none flex flex-col opacity-0 absolute px-2 py-4 bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-gray-700;
+		@apply pointer-events-none flex flex-col opacity-0 absolute bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-gray-700;
 		transition: opacity 0.2s ease-in-out;
 	}
 

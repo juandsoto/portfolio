@@ -29,7 +29,7 @@ export const experiences: IExperience[] = [
 			{ name: "Trainee Engineer", startDate: "2022-09-19T00:00:00.000Z", endDate: "2022-10-15T00:00:00.000Z" },
 		],
 		description:
-			"This was my first experience in a software development company. I worked in web development with Typescript as programming language and React as Frontend library. Initially I was asked to do small fixes in old features but quickly I started to develop new features therefore I took advantage of that and enhanced my skills.",
+			`Development of web application for Ensolvers' employee management.\n\n ● Focused on developing a dedicated component within the application for tracking and managing off. ● Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
 		tools: ["react", "typescript", "scrum"],
 		startDate: "2022-09-19T00:00:00.000Z",
 		endDate: "2022-10-15T00:00:00.000Z",

@@ -8,7 +8,7 @@ const Courses = () => {
 				<h2 className="text-center font-bold">Certificates</h2>
 				<p className="mx-auto text-center">These are some of the courses I have taken</p>
 			</div>
-			<div className="flex justify-center items-stretch gap-8 flex-wrap">
+			<div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8">
 				{ courses.map(course => (
 					<Course key={ course.id } course={ course } />
 				)) }
