@@ -112,7 +112,7 @@
 
 	.picture {
 		@apply aspect-square;
-		background: url(assets/me.png) no-repeat center;
+		background: url(assets/me.png) no-repeat top;
 		scale: 1.2;
 		background-size: cover;
 		border-radius: 50%;

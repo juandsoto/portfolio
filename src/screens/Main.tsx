@@ -25,7 +25,7 @@ const Main = () => {
 								<span className="font-bold text-lg pr-2">Hi!</span>I'm Juan David.
 							</p>
 							<p>
-								Software Engineer from Universidad del Valle with over 2 years of hands-on experience in web development, specializing in technologies such as React.js, TypeScript, and Node.js.
+								Software Engineer with over 2 years of hands-on experience in web development, specializing in technologies such as React.js, TypeScript, and Node.js.
 								<br />
 								Solid foundation in coding, problem-solving, teamwork and dedication to driving innovative results. A strong commitment to precision and attention to detail that ensures the delivery of high-quality software solutions that meet both user needs and business objectives. Collaborating effectively with cross-functional teams to achieve project goals.
 							</p>

@@ -28,9 +28,11 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 					<a className="icon cursor-pointer" href={ repository } target="_blank">
 						<GitHub className="bg-white dark:bg-dark rounded-full" fontSize="large" />
 					</a>
-					<a className="btn-secondary" href={ deployment } target="_blank">
-						Open
-					</a>
+					{deployment && (
+						<a className="btn-secondary" href={ deployment } target="_blank">
+							Open
+						</a>
+					)}
 				</div>
 				<div className="flex-1 w-full lg:w-1/3 flex flex-col px-4 py-2">
 					<h4 className="capitalize text-lg font-bold">{ title }</h4>

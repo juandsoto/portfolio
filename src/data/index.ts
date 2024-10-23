@@ -26,7 +26,7 @@ export const experiences: IExperience[] = [
 		image:
 			"https://res.cloudinary.com/dcaythx6e/image/upload/v1728512572/portfolio/bylogiclogo_u4sswv.svg",
 		roles: [
-			{ name: "Software Engineer", startDate: "July 2023", endDate: "" },
+			{ name: "Software Engineer", startDate: "July 2023", endDate: "Oct 2024" },
 		],
 		description: `
 			● Development of a trading broker platform as well as a comprehensive management application for administrators to
@@ -121,7 +121,7 @@ export const projects: IProject[] = [
 			"Management web application where El Descanso hotel can manage clients, bookings, rooms among others. This app was developed as the final project of Software Development and Databases classes at Universidad del Valle, Software Engineer program",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149717/portfolio/el_descanso_pnwg0i.png",
 		repository: "https://github.com/juandsoto/el-descanso",
-		deployment: "https://el-descanso.vercel.app",
+		deployment: "",
 		tags: ["cms", "web"],
 		tools: [
 			"css",
@@ -142,7 +142,7 @@ export const projects: IProject[] = [
 		description: "codersfap is a savings and loans fund where users can save and loan money between them.",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672150213/portfolio/codersfap_vjgzcd.png",
 		repository: "https://github.com/juandsoto/codersfap",
-		deployment: "https://codersfap.vercel.app",
+		deployment: "",
 		tags: ["cms", "web"],
 		tools: [
 			"expressjs",
@@ -173,7 +173,7 @@ export const projects: IProject[] = [
 		description: "notek is a note taking app.",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149183/portfolio/notek_hyljqi.png",
 		repository: "https://github.com/juandsoto/notes-app",
-		deployment: "https://notes-app-juandsoto.vercel.app",
+		deployment: "",
 		tags: ["backend", "frontend", "web"],
 		tools: [
 			"css",
@@ -195,7 +195,7 @@ export const projects: IProject[] = [
 			"Dodge It is a game that simulates driving a car which goal is to get to the goal dodging the randomly appearing  and moving obstacles.",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149976/portfolio/dodge_it_eudv7y.png",
 		repository: "https://github.com/juandsoto/dodge-it",
-		deployment: "https://dodge-it.vercel.app",
+		deployment: "",
 		tags: ["game", "web"],
 		tools: ["css", "html", "react", "tailwindcss", "typescript", "vercel", "vitejs", "zustand"],
 	},
