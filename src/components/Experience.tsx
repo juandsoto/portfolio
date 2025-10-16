@@ -1,6 +1,8 @@
 import { IExperience, IOrientation } from "types";
 import Dot from "./Dot";
 import { useState } from "react";
+import { Circle } from "@mui/icons-material";
+import { useBreakpoint } from "hooks";
 
 interface Props {
 	experience: IExperience;
@@ -17,14 +19,10 @@ const COMPANY_CLASSNAME: Record<IOrientation, string> = {
 	'right': 'text-end',
 }
 
-const TIME_CLASSNAME: Record<IOrientation, string> = {
-	'left': '',
-	'right': 'flex-row-reverse sm:flex-row',
-}
-
 const MAX_DESCRIPTION_LENGTH = 600;
 
 const Experience = ({ experience, orientation = 'left' }: Props) => {
+	const { sm } = useBreakpoint();
 	const [isExpanded, setIsExpanded] = useState(false);
 
 	const toggleExpand = () => setIsExpanded(prev => !prev);
@@ -46,18 +44,9 @@ const Experience = ({ experience, orientation = 'left' }: Props) => {
 			{ experience.roles.map(role => (
 					<div key={ role.name } className="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
 						<span className={`capitalize text-secondary font-semibold ${COMPANY_CLASSNAME[orientation]}`}>{ role.name }</span>
-						<p className={`flex gap-2 items-center ${TIME_CLASSNAME[orientation]}`}>
-							<Dot />
-							{ role.endDate.length === 0
-								? (
-									<span className="capitalize">Since { role.startDate }</span>
-								)
-								: (
-									<>
-										<span>{ role.startDate }</span>{ "-" }<span>{ role.endDate }</span>
-									</>
-								)
-							}
+						<p className='flex gap-2 items-center'>
+							<Circle className="text-secondary" sx={ { fontSize: "6px", display: sm() ? 'none' : 'block'  } } />
+							<span>{ role.startDate }</span>{ "-" }<span>{ role.endDate }</span>
 						</p>
 					</div>
 				)) }

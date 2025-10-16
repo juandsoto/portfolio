@@ -8,7 +8,7 @@ export const experiences: IExperience[] = [
 		company: "OfferUp",
 		company_link: "https://about.offerup.com/",
 		roles: [
-			{ name: "Software Development Engineer I", startDate: "November 2024", endDate: "November 2025" },
+			{ name: "Software Development Engineer I", startDate: "November 2024", endDate: "Present" },
 		],
 		description: `
 			• Performed a Frontend Engineer role for OfferUp's mobile and web applications, enhancing performance, accessibility, and usability across platforms while continuously implementing new features from <strong>concept to launch.</strong></br>
@@ -19,9 +19,7 @@ export const experiences: IExperience[] = [
 • Contributed to a fast-paced environment with weekly feature deliveries for both mobile and web applications.</br>
 • Collaborated on <strong>experimental features</strong> to validate ideas and optimize user experience through data-informed experimentation.</br>
 • Helped identify and fix bugs across devices, ensuring a polished user experience.</br>
-• Technologies: React, React native, Apollo GraphQL, StatSig, Bitrise, Jest, and more.</br></br>
-
-<strong>My time at the company concluded as part of a broader organizational layoff.</strong>`,
+• Technologies: React, React native, Apollo GraphQL, StatSig, Bitrise, Jest, and more.`,
 		tools: ["React native", "GraphQL", "React", "Typescript", "Jest", "StatSig"],
 		logoClassName: 'bg-[#01a97e]'
 	},
