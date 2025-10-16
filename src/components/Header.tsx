@@ -66,7 +66,7 @@ function Header() {
 							<li>
 								<a href="#skills" onClick={ toggleMenu }>Skills</a>
 							</li>
-							<li className="btn-secondary px-2 py-1">
+							<li>
 								<a href="#projects" onClick={ toggleMenu }>Personal Projects</a>
 							</li>
 							<li>
@@ -87,7 +87,7 @@ function Header() {
 						<li>
 							<a href="#skills">Skills</a>
 						</li>
-						<li className="btn-secondary px-2 py-1">
+						<li>
 							<a href="#projects">Personal Projects</a>
 						</li>
 						<li>

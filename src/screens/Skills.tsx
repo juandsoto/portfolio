@@ -38,10 +38,9 @@ const Skills = () => {
 	};
 
 	return (
-		<div id="skills" className="flex flex-col gap-8">
+		<div id="skills" className="section flex flex-col gap-8">
 			<div className="flex flex-col gap-4 px-4">
 				<h2 className="text-center font-bold">Skills</h2>
-				<p className="mx-auto text-center">These are some of the tools I have learned so far</p>
 			</div>
 			<Slider { ...settings }>
 				{ skills.map(skill => (

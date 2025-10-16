@@ -7,5 +7,4 @@ export { default as Networking } from './Networking';
 export { default as Picture } from "./Picture";
 export { default as Project } from "./Project";
 export { default as ProjectDetails } from "./ProjectDetails";
-export { default as Tool } from "./Tool";
 export { default as Footer } from "./Footer";

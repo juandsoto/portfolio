@@ -86,7 +86,7 @@
 	}
 
 	.course__overlay {
-		@apply pointer-events-none flex flex-col opacity-0 absolute bg-light dark:bg-dark top-0 bottom-0 left-[40%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-gray-700;
+		@apply pointer-events-none flex flex-col opacity-0 absolute bg-light dark:bg-dark top-0 bottom-0 left-[10%] right-0 rounded-r-md shadow-sm shadow-gray-500 dark:shadow-gray-700;
 		transition: opacity 0.2s ease-in-out;
 	}
 
@@ -94,20 +94,12 @@
 		@apply opacity-100 pointer-events-auto;
 	}
 
+	.company-name {
+		@apply text-2xl font-bold;
+	}
+
 	.curve-bg {
 		background: url(curveLine.svg) no-repeat right top;
-	}
-
-	.experience {
-		@apply flex flex-col md:w-[70%];
-	}
-
-	.experience:nth-child(odd) {
-		@apply text-justify sm:text-start;
-	}
-
-	.experience:nth-child(even) {
-		@apply ml-auto items-end text-justify sm:text-end;
 	}
 
 	.picture {

@@ -16,11 +16,8 @@ const Projects = () => {
 	}, [selectedProjectCategories]);
 
 	return (
-		<div id="projects" className="section md:mx-0 xl:mx-8 flex flex-col gap-4">
+		<div id="projects" className="section flex flex-col gap-4">
 			<h2 className="text-center font-bold">Projects</h2>
-			<p className="md:w-[75%] mx-auto text-center">
-				This is my work. Some of these applications were made based on my Software Engineering career projects
-			</p>
 			<div className="flex justify-center">
 				<Categories />
 			</div>

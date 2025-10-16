@@ -1,39 +1,70 @@
-import { IExperience } from "types";
+import { IExperience, IOrientation } from "types";
 import Dot from "./Dot";
+import { useState } from "react";
 
 interface Props {
 	experience: IExperience;
+	orientation?: IOrientation;
 }
 
-const Experience = ({ experience }: Props) => {
+const ROOT_CLASSNAME: Record<IOrientation, string> = {
+	'left': 'text-justify sm:text-start',
+	'right': 'ml-auto items-end text-justify sm:text-end',
+}
+
+const COMPANY_CLASSNAME: Record<IOrientation, string> = {
+	'left': '',
+	'right': 'text-end',
+}
+
+const TIME_CLASSNAME: Record<IOrientation, string> = {
+	'left': '',
+	'right': 'flex-row-reverse sm:flex-row',
+}
+
+const MAX_DESCRIPTION_LENGTH = 600;
+
+const Experience = ({ experience, orientation = 'left' }: Props) => {
+	const [isExpanded, setIsExpanded] = useState(false);
+
+	const toggleExpand = () => setIsExpanded(prev => !prev);
+
+	const description = isExpanded ? experience.description : experience.description.slice(0, MAX_DESCRIPTION_LENGTH);
+	const seeMoreLabel = isExpanded ? ' See less' : '... See more';
+	
 	return (
-		<div className="experience">
+		<div className={`flex flex-col md:w-[70%] ${ROOT_CLASSNAME[orientation]}`}>
 			<div className="flex max-h-32 items-center gap-4 mb-4">
 				<a
-					className={`flex max-h-32 items-center rounded-lg px-2 py-1 max-w-12 overflow-hidden ${experience.logoClassName ? experience.logoClassName : ''}`}
+					className={`flex max-h-32 items-center rounded-lg px-4 py-2 max-w-12 overflow-hidden hover:scale-110 transition-transform ${experience.logoClassName}`}
 					href={ experience.company_link }
 					target="_blank"
 				>
-					<img className={`object-center h-full`} src={ experience.image } alt={ experience.company } />
+					<h3 className="company-name">{experience.company}</h3>
 				</a>
 			</div>
 			{ experience.roles.map(role => (
-					<div key={ role.name } className="flex gap-2 items-center mb-2">
-						<span className="capitalize text-secondary font-semibold">{ role.name }</span>
-						<Dot />
-						{ role.endDate.length === 0
-							? (
-								<span className="capitalize">Since { role.startDate }</span>
-							)
-							: (
-								<>
-									<span>{ role.startDate }</span>{ "-" }<span>{ role.endDate }</span>
-								</>
-							)
-						}
+					<div key={ role.name } className="flex flex-col sm:flex-row gap-2 sm:items-center mb-2">
+						<span className={`capitalize text-secondary font-semibold ${COMPANY_CLASSNAME[orientation]}`}>{ role.name }</span>
+						<p className={`flex gap-2 items-center ${TIME_CLASSNAME[orientation]}`}>
+							<Dot />
+							{ role.endDate.length === 0
+								? (
+									<span className="capitalize">Since { role.startDate }</span>
+								)
+								: (
+									<>
+										<span>{ role.startDate }</span>{ "-" }<span>{ role.endDate }</span>
+									</>
+								)
+							}
+						</p>
 					</div>
 				)) }
-			<p dangerouslySetInnerHTML={{__html: experience.description}}></p>
+			<p dangerouslySetInnerHTML={{__html: description}} />
+			{ experience.description.length > MAX_DESCRIPTION_LENGTH && (
+				<button className="inline-flex text-secondary font-semibold mt-2" onClick={toggleExpand}>{seeMoreLabel}</button>
+			) }
 			{ experience.tools.length > 0 && (
 				<div className="mt-4 flex flex-wrap gap-2">
 					{ experience.tools.map((tool, idx) => (

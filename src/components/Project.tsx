@@ -12,7 +12,7 @@ const Project = ({ project }: ProjectProps) => {
 	return (
 		<motion.div className="project cursor-pointer" layoutId={ id.toString() } onClick={ () => setShowProjectId(id) }>
 			<div className="overflow-hidden rounded-lg h-full w-full">
-				<img className="project__image h-full w-full object-cover" src={ image } alt={ title } />
+				<img className="project__image h-full w-full object-cover aspect-video" src={ image } alt={ title } />
 			</div>
 		</motion.div>
 	);

@@ -4,11 +4,31 @@ export const categories: TCategory[] = ["web", "AI", "game", "cms", 'optimizatio
 
 export const experiences: IExperience[] = [
 	{
+		id: 6,
+		company: "OfferUp",
+		company_link: "https://about.offerup.com/",
+		roles: [
+			{ name: "Software Development Engineer I", startDate: "November 2024", endDate: "November 2025" },
+		],
+		description: `
+			• Performed a Frontend Engineer role for OfferUp's mobile and web applications, enhancing performance, accessibility, and usability across platforms while continuously implementing new features from <strong>concept to launch.</strong></br>
+• Collaborated closely with product, designers, and backend engineers to deliver features from concept to production, contributing to an agile, cross-functional team.</br>
+• Actively contributed to the development of the Services vertical and took part in building the Services Posting feature <strong>from the ground up — from MVP design to a successful launch.</strong> The feature delivered strong results from the start and is on track to become one of the app's key revenue drivers, with its contribution growing steadily over time.</br>
+• Implemented reusable UI components and design systems, ensuring consistency and scalability across the product.</br>
+• Promoted code quality through unit and integration testing with Jest, consistent code reviews, and <strong>maintaining 100% test coverage</strong> in all developed features.</br>
+• Contributed to a fast-paced environment with weekly feature deliveries for both mobile and web applications.</br>
+• Collaborated on <strong>experimental features</strong> to validate ideas and optimize user experience through data-informed experimentation.</br>
+• Helped identify and fix bugs across devices, ensuring a polished user experience.</br>
+• Technologies: React, React native, Apollo GraphQL, StatSig, Bitrise, Jest, and more.</br></br>
+
+<strong>My time at the company concluded as part of a broader organizational layoff.</strong>`,
+		tools: ["React native", "GraphQL", "React", "Typescript", "Jest", "StatSig"],
+		logoClassName: 'bg-[#01a97e]'
+	},
+	{
 		id: 4,
 		company: "Tanok Tech",
-		company_link: "https://www.linkedin.com/company/tanok-tech/",
-		image:
-			"https://res.cloudinary.com/dcaythx6e/image/upload/v1728513630/portfolio/transsforma_coaching_logo-removebg-preview_gqofkh.png",
+		company_link: "https://www.tanok-tech.com/",
 		roles: [
 			{ name: "Junior Fullstack Developer", startDate: "May 2024", endDate: "November 2024" },
 		],
@@ -17,69 +37,62 @@ export const experiences: IExperience[] = [
 			application of a recycling company. Use of technologies such as
 			Nextjs, Prisma, YouTrack, Figma and PostgreSQL.`,
 		tools: ["Nextjs", "Prisma", "YouTrack", "Figma", "PostgreSQL", "Typescript"],
-		logoClassName: 'bg-dark'
+		logoClassName: 'bg-[#3b7ae8]'
 	},
 	{
 		id: 5,
 		company: "ByLogic",
 		company_link: "https://www.bylogic.co/",
-		image:
-			"https://res.cloudinary.com/dcaythx6e/image/upload/v1728512572/portfolio/bylogiclogo_u4sswv.svg",
 		roles: [
-			{ name: "Software Engineer", startDate: "July 2023", endDate: "Oct 2024" },
+			{ name: "Software Engineer", startDate: "July 2023", endDate: "October 2024" },
 		],
 		description: `
-			● Development of a trading broker platform as well as a comprehensive management application for administrators to
+			• Development of a trading broker platform as well as a comprehensive management application for administrators to
 			control critical data. User authentication, account resources through web3 technologies. The platform was built using ReactJS, Expressjs, AWS and the TradingView API.</br>
-			● Mobile application as a trip planning tool using AI to create custom itineraries based on user preferences and their actual profile
+			• Mobile application as a trip planning tool using AI to create custom itineraries based on user preferences and their actual profile
 			configuration. Use of React Native, Expressjs, AWS and OpenAI.`,
 		tools: ["ReactJS", "Expressjs", "AWS", "React Native", "OpenAI", "Typescript"],
-		logoClassName: 'bg-dark dark:bg-transparent'
+		logoClassName: 'bg-[#fc5f27]'
 	},
 	{
 		id: 3,
 		company: "Holcim ADC",
 		company_link: "https://adc.holcim.com/",
-		image:
-			"https://res.cloudinary.com/dcaythx6e/image/upload/v1705083633/portfolio/bk55kuufc8nbs93swuwk.svg",
 		roles: [
 			{ name: "Trainee Engineer", startDate: "January 2024", endDate: "July 2024" },
 			{ name: "Intern", startDate: "July 2023", endDate: "January 2024" }
 		],
 		description: `
-			● Backend development using Java Spring Boot, handling payment transactions and related functions as well as implementing unit and integration tests to ensure its reliability.</br>
-			● Enhancement of Next.js-based web interfaces.</br>
-			● Refactoring Nodejs applications making use of AWS Lambda, S3, Api Gateway.`,
+			• Backend development using Java Spring Boot, handling payment transactions and related functions as well as implementing unit and integration tests to ensure its reliability.</br>
+			• Enhancement of Next.js-based web interfaces.</br>
+			• Refactoring Nodejs applications making use of AWS Lambda, S3, Api Gateway.`,
 		tools: ["Java", "Spring Boot", "AWS", "GitLab", "Nodejs", "Typescript", "Scrum"],
-		logoClassName: 'dark:bg-light'
+		logoClassName: 'bg-[#95c130]'
 	},
 	{
 		id: 1,
 		company: "Ensolvers",
-		company_link: "https://www.ensolvers.com/es/inicio/",
-		image:
-			"https://res.cloudinary.com/dcaythx6e/image/upload/v1705083540/portfolio/y6gaazp7sidxsmu2rjcb.png",
+		company_link: "https://www.ensolvers.com",
 		roles: [
 			{ name: "Trainee Engineer", startDate: "September 2022", endDate: "October 2022" },
 		],
 		description: `
 			Development of web application for Ensolvers' employee management.</br></br>
-			● Focused on developing a dedicated component within the application for tracking and managing off.</br>
-			● Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
+			• Focused on developing a dedicated component within the application for tracking and managing off.</br>
+			• Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
 		tools: ["react", "typescript", "scrum"],
-		logoClassName: 'dark:bg-light'
+		logoClassName: 'bg-[#f49d38]'
 	},
 	{
 		id: 2,
 		company: "Universidad del Valle",
 		company_link: "https://www.univalle.edu.co/",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672955329/portfolio/univalle_tt2gvo.png",
 		roles: [
 			{ name: "Software Engineering", startDate: "May 2019", endDate: "November 2024" },
 		],
-		description: "I am a software engineer with a five-year education from Universidad del Valle. This esteemed institution provided me with a comprehensive understanding of software development, covering diverse programming languages and cutting-edge technologies. The hands-on approach to problem-solving and collaborative projects during my time at the university has fueled my passion for coding.",
+		description: "Software engineer with a five-year education from Universidad del Valle. This esteemed institution provided me with a comprehensive understanding of software development, covering diverse programming languages and cutting-edge technologies. The hands-on approach to problem-solving and collaborative projects during my time at the university has fueled my passion for coding.",
 		tools: [],
-		logoClassName: 'dark:bg-light'
+		logoClassName: 'bg-[#ef1703]'
 	},
 ];
 

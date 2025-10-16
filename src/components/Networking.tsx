@@ -11,7 +11,7 @@ function Networking() {
 				href="https://www.linkedin.com/in/juan-david-soto-carmona-287a89206"
 				target="_blank"
 			>
-				<LinkedIn />
+				<LinkedIn className='text-[#0967c2]'/>
 			</a>
 		</>
 	);

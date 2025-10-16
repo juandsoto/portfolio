@@ -17,15 +17,12 @@ const Course = ({ course }: Props) => {
 					<img className="object-contain h-full w-full rounded-full" src={ platform } alt={ `${name} - platform` } />
 				</div>
 				<div className="flex-1 flex flex-col gap-4 justify-center items-center overflow-y-auto px-2 py-4">
-					<h4 className="hidden xs:block text-center font-bold text-base sm:text-lg">{ name }</h4>
-					<a className="text-secondary font-semibold" href={ course_link } target="_blank" rel="noopener noreferrer">
-						Go to course
-					</a>
-					{ certificate_link.length > 0 && (
-						<a className="btn-secondary" href={ certificate_link } target="_blank" rel="noopener noreferrer">
-							Certificate
-						</a>
-					) }
+					<h4 className="text-center font-bold text-base">{ name }</h4>
+						{ certificate_link.length > 0 && (
+							<a className="btn-secondary" href={ certificate_link } target="_blank" rel="noopener noreferrer">
+								Certificate
+							</a>
+						) }
 				</div>
 			</div>
 		</div>

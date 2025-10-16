@@ -1,7 +1,7 @@
 
 function Footer() {
 	return (
-		<footer className="w-full bg-dark text-light dark:bg-light/10 mx-auto p-8 sm:flex gap-8 md:items-center md:justify-between">
+		<footer className="w-full bg-dark text-light dark:bg-light/10 p-8 sm:flex gap-8 md:items-center md:justify-between">
 			<span className="text-center block">© { new Date().getFullYear() }
 				<a href="https://github.com/juandsoto" target='_blank' className="hover:underline"> Juan David Soto</a>. All Rights Reserved.
 			</span>
