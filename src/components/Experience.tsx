@@ -34,7 +34,7 @@ const Experience = ({ experience, orientation = 'left' }: Props) => {
 		<div className={`flex flex-col md:w-[70%] ${ROOT_CLASSNAME[orientation]}`}>
 			<div className="flex max-h-32 items-center gap-4 mb-4">
 				<a
-					className={`flex max-h-32 items-center rounded-lg px-4 py-2 max-w-12 overflow-hidden hover:scale-110 transition-transform ${experience.logoClassName}`}
+					className={`flex max-h-32 items-center rounded-lg px-4 py-2 max-w-12 overflow-hidden hover:scale-105 transition-transform ${experience.logoClassName}`}
 					href={ experience.company_link }
 					target="_blank"
 				>
@@ -58,7 +58,7 @@ const Experience = ({ experience, orientation = 'left' }: Props) => {
 				<div className="mt-4 flex flex-wrap gap-2">
 					{ experience.tools.map((tool, idx) => (
 						<div key={ tool } className="flex items-center gap-2">
-							<span className="capitalize">{ tool }</span>
+							<span>{ tool }</span>
 							{ idx < experience.tools.length - 1 && <Dot /> }
 						</div>
 					)) }

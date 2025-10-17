@@ -135,7 +135,7 @@
 	}
 
 	.skill__name {
-		@apply bg-light/80 dark:bg-dark/80 text-[.75rem] sm:text-base md:text-lg text-black dark:text-light px-2 py-1 rounded-lg font-bold opacity-0 absolute top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] shadow-sm shadow-black;
+		@apply bg-light/80 dark:bg-dark/80 text-[.75rem] sm:text-base md:text-lg text-black dark:text-light px-2 py-1 rounded-lg font-bold opacity-0 absolute z-50 top-[50%] left-[50%] translate-y-[-50%] translate-x-[-50%] shadow-sm shadow-black;
 		transition: opacity 0.2s ease;
 	}
 

@@ -11,8 +11,6 @@ const Skills = () => {
 		autoplay: true,
 		speed: skills.length * 1400,
 		autoplaySpeed: 0,
-		swipeToSlide: true,
-		swipe: true,
 		cssEase: "linear",
 		arrows: false,
 		responsive: [

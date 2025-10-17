@@ -31,9 +31,9 @@ function Header() {
 				<div className="section max-w-6xl">
 					<div className="flex justify-between items-center">
 						{ isMenuOpen ? (
-							<Close className="icon mb-1 cursor-pointer" onClick={ toggleMenu } />
+							<Close className="icon cursor-pointer" onClick={ toggleMenu } />
 						) : (
-							<Menu className="icon mb-1 cursor-pointer" onClick={ toggleMenu } />
+							<Menu className="icon cursor-pointer" onClick={ toggleMenu } />
 						) }
 						<div className="flex gap-4 items-center">
 							<Networking />
@@ -50,7 +50,7 @@ function Header() {
 					</div>
 					<div
 						className={
-							["bg-light dark:bg-dark mt-4 w-fit mx-auto", isMenuOpen ? 'h-48 mobile-breakpoint:h-12' : 'h-0'].join(' ')
+							["bg-light dark:bg-dark mt-4 w-fit mx-auto", isMenuOpen ? 'h-48 mobile-breakpoint:h-12' : 'h-0 mt-0'].join(' ')
 						}
 						style={ {
 							visibility: isMenuOpen ? 'visible' : 'hidden',

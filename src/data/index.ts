@@ -18,9 +18,8 @@ export const experiences: IExperience[] = [
 • Promoted code quality through unit and integration testing with Jest, consistent code reviews, and <strong>maintaining 100% test coverage</strong> in all developed features.</br>
 • Contributed to a fast-paced environment with weekly feature deliveries for both mobile and web applications.</br>
 • Collaborated on <strong>experimental features</strong> to validate ideas and optimize user experience through data-informed experimentation.</br>
-• Helped identify and fix bugs across devices, ensuring a polished user experience.</br>
-• Technologies: React, React native, Apollo GraphQL, StatSig, Bitrise, Jest, and more.`,
-		tools: ["React native", "GraphQL", "React", "Typescript", "Jest", "StatSig"],
+• Helped identify and fix bugs across devices, ensuring a polished user experience.`,
+		tools: ["React native", "Apollo GraphQL", "React", "Typescript", "Jest", "StatSig", "Bitrise and more"],
 		logoClassName: 'bg-[#01a97e]'
 	},
 	{
@@ -46,10 +45,10 @@ export const experiences: IExperience[] = [
 		],
 		description: `
 			• Development of a trading broker platform as well as a comprehensive management application for administrators to
-			control critical data. User authentication, account resources through web3 technologies. The platform was built using ReactJS, Expressjs, AWS and the TradingView API.</br>
+			control critical data. User authentication, account resources through web3 technologies. The platform was built using React, Express, AWS and the TradingView API.</br>
 			• Mobile application as a trip planning tool using AI to create custom itineraries based on user preferences and their actual profile
-			configuration. Use of React Native, Expressjs, AWS and OpenAI.`,
-		tools: ["ReactJS", "Expressjs", "AWS", "React Native", "OpenAI", "Typescript"],
+			configuration. Use of React Native, Express, AWS and OpenAI.`,
+		tools: ["React", "Express", "AWS", "React Native", "OpenAI", "Typescript"],
 		logoClassName: 'bg-[#fc5f27]'
 	},
 	{
@@ -78,7 +77,7 @@ export const experiences: IExperience[] = [
 			Development of web application for Ensolvers' employee management.</br></br>
 			• Focused on developing a dedicated component within the application for tracking and managing off.</br>
 			• Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
-		tools: ["react", "typescript", "scrum"],
+		tools: ["React", "Typescript", "Scrum"],
 		logoClassName: 'bg-[#f49d38]'
 	},
 	{
@@ -123,7 +122,7 @@ export const projects: IProject[] = [
 		repository: "https://github.com/juandsoto/war-horses",
 		deployment: "https://war-horses.vercel.app",
 		tags: ["ai", "game", "web"],
-		tools: ["css", "html", "react", "tailwindcss", "typescript", "vercel", "vitejs", "zustand"],
+		tools: ["css", "html", "react", "tailwindcss", "typescript", "vercel", "vite", "zustand"],
 	},
 	{
 		id: 2,
@@ -214,20 +213,32 @@ export const projects: IProject[] = [
 
 export const skills: ISkill[] = [
 	{
-		name: "Dart",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705081165/portfolio/skills/uccmsyoxfhi61is3jlf7.svg",
+		name: "React Native",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760710758/portfolio/skills/react-native_vmf3vl.svg",
 	},
 	{
-		name: "Flutter",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705081165/portfolio/skills/uueo7ez3qdzwsxqdrjd1.svg",
+		name: "GraphQL",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/graphQL_wjneok.svg",
+	},
+	{
+		name: "Typescript",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/typescript_vezgyu.svg",
+	},
+	{
+		name: "Jest",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760712320/portfolio/skills/jest-2-cropped_j2tuu8.svg",
+	},
+	{
+		name: "React",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/react_bw8atm.svg",
+	},
+	{
+		name: "Tanstack",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711943/portfolio/skills/splash-dark_sdpkii.png",
 	},
 	{
 		name: "AWS",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705081165/portfolio/skills/vmpdg3stvh9ae0cfcugh.svg",
-	},
-	{
-		name: "ReactJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/react_bw8atm.svg",
 	},
 	{
 		name: "PostgreSQL",
@@ -235,15 +246,11 @@ export const skills: ISkill[] = [
 	},
 	{
 		name: "NextJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/next_jelyo6.svg",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711435/portfolio/skills/next-js-cropped_bwjbft.svg",
 	},
 	{
 		name: "NodeJS",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/nodejs_ty2tix.svg",
-	},
-	{
-		name: "MySQL",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016643/portfolio/skills/mysql_khs3s8.svg",
 	},
 	{
 		name: "MaterialUI",
@@ -254,40 +261,16 @@ export const skills: ISkill[] = [
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/javascript_te45ox.svg",
 	},
 	{
-		name: "MongoDB",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/mongodb_fw9mpb.svg",
-	},
-	{
-		name: "GraphQL",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/graphQL_wjneok.svg",
+		name: "DynamoDB",
+		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711374/portfolio/skills/aws-dynamodb-cropped_k3lehe.svg",
 	},
 	{
 		name: "Framer Motion",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/framer-motion_zrvzja.svg",
 	},
 	{
-		name: "Css",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016641/portfolio/skills/css_nkwcyc.svg",
-	},
-	{
-		name: "Tailwindcss",
+		name: "TailwindCSS",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/tailwindcss_zwu09i.svg",
-	},
-	{
-		name: "ViteJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016641/portfolio/skills/vitejs_g9wikr.svg",
-	},
-	{
-		name: "Vercel",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/vercel_fnmgin.svg",
-	},
-	{
-		name: "Typescript",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/typescript_vezgyu.svg",
-	},
-	{
-		name: "Html",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016344/portfolio/skills/html_mj4zcr.svg",
 	},
 ];
 
