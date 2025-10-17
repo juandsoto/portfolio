@@ -40,6 +40,7 @@ const Skills = () => {
 			<div className="flex flex-col gap-4 px-4">
 				<h2 className="text-center font-bold">Skills</h2>
 			</div>
+			{/* @ts-expect-error working as it is */}
 			<Slider { ...settings }>
 				{ skills.map(skill => (
 					<div key={ skill.name } className="skill__container">

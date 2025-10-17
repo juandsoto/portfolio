@@ -29,11 +29,11 @@
 	}
 
 	::-webkit-scrollbar {
-		@apply bg-light dark:bg-dark w-2;
+		@apply bg-gray-300 dark:bg-gray-700 w-2;
 	}
 
 	::-webkit-scrollbar-thumb {
-		@apply bg-dark dark:bg-light;
+		@apply bg-gray-500;
 	}
 
 	html {

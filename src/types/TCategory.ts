@@ -1,3 +1,3 @@
-type TCategory = "web" | "AI" | "cms" | "game" | 'optimization';
+type TCategory = "algorithm" | "AI" | "cms" | "game" | 'optimization';
 
 export default TCategory;

@@ -1,6 +1,6 @@
 import { ICourse, IExperience, IProject, ISkill, TCategory } from "types";
 
-export const categories: TCategory[] = ["web", "AI", "game", "cms", 'optimization'];
+export const categories: TCategory[] = ["algorithm", "AI", "cms", "game", 'optimization'];
 
 export const experiences: IExperience[] = [
 	{
@@ -96,118 +96,116 @@ export const experiences: IExperience[] = [
 export const projects: IProject[] = [
 	{
 		id: 8,
-		title: "medical image processing",
-		description: "Webapp for applying segmentation algorithms to magnetic resonance images for helping disease detection, diagnosis, and treatment monitoring.",
+		title: "Medical Image Processing",
+		description: `
+		<p>Applies segmentation algorithms to magnetic resonance images for helping disease detection, diagnosis, and treatment monitoring.</p>
+		</br>
+		<p>The project was developed as the final project of the Medical Image Processing class at Universidad del Valle, Software Engineer program.</p>`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514743/portfolio/Captura_de_pantalla_2024-05-07_190937_ylbbgu.png",
 		repository: "https://github.com/juandsoto/procesamiento-de-imagenes-medicas",
 		deployment: "",
-		tags: ["web"],
-		tools: ["python", "tailwindcss", "typescript", "react"],
+		tags: ["algorithm", "algorithm"],
+		tools: ["Python", "React", "TailwindCSS", "Typescript"],
 	},
 	{
 		id: 7,
-		title: "constraint programming",
-		description: "Application for optimizing costs for the recording of actors scenes in a movie. The solution is found based on constraints using the Minizinc programming language",
+		title: "Constraint Programming",
+		description: `
+		<p>Optimize costs for the recording of actor scenes in a movie. The solution is found based on constraints using the Minizinc programming language.</p>
+		</br>
+		<p>The project was developed as the final project of the Constraint Programming class at Universidad del Valle, Software Engineer program.</p>
+		`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514748/portfolio/WhatsApp_Image_2024-10-09_at_17.57.48_qkodma.jpg",
 		repository: "https://github.com/juandsoto/proyecto-PPR",
 		deployment: "",
-		tags: ["optimization", "web"],
-		tools: ["minizinc", "tailwindcss", "typescript", "react"],
+		tags: ["optimization", "algorithm"],
+		tools: ["Minizinc", "React", "TailwindCSS", "Typescript"],
 	},
 	{
 		id: 1,
-		title: "war horses",
-		description: "War horses is a multiplayer game where you play against an artificial intelligence machine.",
+		title: "War Horses",
+		description: `
+		<p>Play against an artificial intelligence machine. The AI uses minimax algorithm with alpha-beta pruning to make its decisions.</p>
+		</br>
+		<p>The project was developed as one of the final projects of the Artificial Intelligence class at Universidad del Valle, Software Engineer program.</p>
+		`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672147779/portfolio/war_horses_ovqw2v.png",
 		repository: "https://github.com/juandsoto/war-horses",
 		deployment: "https://war-horses.vercel.app",
-		tags: ["ai", "game", "web"],
-		tools: ["css", "html", "react", "tailwindcss", "typescript", "vercel", "vite", "zustand"],
+		tags: ["ai", "game", "algorithm"],
+		tools: ["React", "TailwindCSS", "Typescript", "Zustand"],
 	},
 	{
 		id: 2,
-		title: "el descanso",
-		description:
-			"Management web application where El Descanso hotel can manage clients, bookings, rooms among others. This app was developed as the final project of Software Development and Databases classes at Universidad del Valle, Software Engineer program",
+		title: "El Descanso",
+		description: `
+		<p>Manage clients, bookings and rooms for a hotel.</p>
+		</br>
+		<p>The project was developed as the final project of Software Development I classes at Universidad del Valle, Software Engineer program.</p>
+		`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149717/portfolio/el_descanso_pnwg0i.png",
 		repository: "https://github.com/juandsoto/el-descanso",
 		deployment: "",
-		tags: ["cms", "web"],
+		tags: ["cms"],
 		tools: [
-			"css",
-			"django",
-			"framer motion",
-			"html",
-			"materialUI",
-			"python",
-			"react",
-			"typescript",
-			"vercel",
-			"vitejs",
+			"Django",
+			"Framer Motion",
+			"MaterialUI",
+			"Python",
+			"React",
+			"Typescript",
 		],
 	},
 	{
 		id: 3,
-		title: "codersfap",
-		description: "codersfap is a savings and loans fund where users can save and loan money between them.",
+		title: "CodersFAP",
+		description: `
+		<p>Saving and loan fund management system for an organization of people.</p>
+		</br>
+		<p>The project was developed as the final project of the Software Development II class at Universidad del Valle, Software Engineer program.</p>
+		`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672150213/portfolio/codersfap_vjgzcd.png",
 		repository: "https://github.com/juandsoto/codersfap",
 		deployment: "",
-		tags: ["cms", "web"],
+		tags: ["cms"],
 		tools: [
-			"expressjs",
-			"javascript",
-			"nodejs",
-			"postgreSQL",
-			"react",
-			"tailwindcss",
-			"typescript",
-			"vercel",
-			"zustand",
+			"ExpressJS",
+			"NodeJS",
+			"PostgreSQL",
+			"React",
+			"TailwindCSS",
+			"Typescript",
+			"Zustand",
 		],
 	},
 	{
 		id: 4,
-		title: "mario smart",
-		description:
-			"Mario Smart is a self solutioning game which implements five search algorithms for Mario to find the Princess.",
+		title: "Mario Smart",
+		description:`
+			<p>Mario Smart is an AI-powered game where players can select a search algorithm to automatically find the princess.</p>
+			</br>
+			<p>The AI implements the following <strong>informed</strong> search algorithms:</p>
+			</br>
+			<ul>
+				<li><strong>Breadth-First Search (BFS):</strong> Explores all neighbors at the present depth prior to moving on to nodes at the next depth level.</li>
+				<li><strong>Depth-First Search (DFS):</strong> Explores as far as possible along each branch before backtracking.</li>
+				<li><strong>Uniform Cost Search (UCS):</strong> Expands the least costly node first, ensuring the optimal path is found based on cumulative cost.</li>
+			</ul>
+			</br>
+			<p>And also the following <strong>uninformed</strong> search algorithms:</p>
+	    </br>
+			<ul>
+				<li><strong>Greedy Search:</strong> Selects the path that appears to be the most promising based on a heuristic estimate of the cost to reach the goal from the current node.</li>
+				<li><strong>A* Search:</strong> Utilizes heuristics to efficiently find the shortest path to the goal by combining the cost to reach a node and an estimated cost to reach the goal from that node.</li>
+			</ul>
+			</br>
+			<p>The project was developed as one of the final projects of the Artificial Intelligence class at Universidad del Valle, Software Engineer program.</p>
+			`,
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673013283/portfolio/mario_eskllf.png",
 		repository: "https://github.com/juandsoto/Mario_Smart_IA",
 		deployment: "https://mario-smart-ia.vercel.app",
-		tags: ["ai", "game", "web"],
-		tools: ["css", "html", "typescript", "vercel", "vitejs"],
-	},
-	{
-		id: 5,
-		title: "notek",
-		description: "notek is a note taking app.",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149183/portfolio/notek_hyljqi.png",
-		repository: "https://github.com/juandsoto/notes-app",
-		deployment: "",
-		tags: ["backend", "frontend", "web"],
-		tools: [
-			"css",
-			"expressjs",
-			"html",
-			"nodejs",
-			"postgreSQL",
-			"react",
-			"sequelize",
-			"tailwindcss",
-			"typescript",
-			"vercel",
-		],
-	},
-	{
-		id: 6,
-		title: "dodge it",
-		description:
-			"Dodge It is a game that simulates driving a car which goal is to get to the goal dodging the randomly appearing  and moving obstacles.",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149976/portfolio/dodge_it_eudv7y.png",
-		repository: "https://github.com/juandsoto/dodge-it",
-		deployment: "",
-		tags: ["game", "web"],
-		tools: ["css", "html", "react", "tailwindcss", "typescript", "vercel", "vitejs", "zustand"],
+		tags: ["ai", "game", "algorithm"],
+		tools: ["Typescript"],
 	},
 ];
 
