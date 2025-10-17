@@ -1,6 +1,6 @@
 import { mountStoreDevtool } from "simple-zustand-devtools";
 import { TCategory } from "types";
-import create from "zustand";
+import { create } from "zustand";
 
 type Theme = "light" | "dark";
 
