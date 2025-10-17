@@ -19,7 +19,7 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 		>
 			<motion.div
 				onClick={ e => e.stopPropagation() }
-				className="relative max-w-screen-xl w-[95vw] sm:w-[85vw] md:w-[65vw] lg:w-[90vw] 2xl:w-[80vw] min-h-[48rem] max-h-[80vh] flex flex-col lg:flex-row rounded-lg bg-light shadow-sm dark:shadow-gray-700 dark:bg-dark"
+				className="relative max-w-screen-xl w-[95vw] sm:w-[85vw] md:w-[65vw] lg:w-[90vw] 2xl:w-[80vw] md:min-h-[48rem] max-h-[80vh] flex flex-col lg:flex-row rounded-lg bg-light shadow-sm dark:shadow-gray-700 dark:bg-dark"
 				layoutId={ project.id.toString() }
 			>
 				<div className="w-full lg:w-3/5 aspect-video rounded-t-lg lg:rounded-lg flex self-stretch">

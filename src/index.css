@@ -20,7 +20,7 @@
 
 .slick-slide {
 	padding: 0 0.4rem;
-	outline: none;
+	outline: none !important;
 }
 
 @layer base {

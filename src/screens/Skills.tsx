@@ -12,6 +12,10 @@ const Skills = () => {
 		speed: skills.length * 1400,
 		autoplaySpeed: 0,
 		cssEase: "linear",
+		swipeToSlide: false,
+		swipe: false,
+		pauseOnHover: false,
+		draggable: false,
 		arrows: false,
 		responsive: [
 			{
@@ -36,7 +40,7 @@ const Skills = () => {
 	};
 
 	return (
-		<div id="skills" className="section flex flex-col gap-8">
+		<div id="skills" className="md:section flex flex-col gap-8">
 			<div className="flex flex-col gap-4 px-4">
 				<h2 className="text-center font-bold">Skills</h2>
 			</div>

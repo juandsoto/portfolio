@@ -10,8 +10,8 @@ interface Props {
 }
 
 const ROOT_CLASSNAME: Record<IOrientation, string> = {
-	'left': 'text-justify sm:text-start',
-	'right': 'ml-auto items-end text-justify sm:text-end',
+	'left': 'sm:text-start',
+	'right': 'ml-auto items-end sm:text-end',
 }
 
 const COMPANY_CLASSNAME: Record<IOrientation, string> = {
