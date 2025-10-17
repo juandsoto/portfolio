@@ -1,8 +1,8 @@
-import { ICourse, IExperience, IProject, ISkill, TCategory } from "types";
+import { TCourse, TExperience, TProject, TSkill, TCategory } from "@/types";
 
-export const categories: TCategory[] = ["algorithm", "AI", "cms", "game", 'optimization'];
+export const CATEGORIES: TCategory[] = ["algorithm", "AI", "cms", "game", 'optimization'];
 
-export const experiences: IExperience[] = [
+export const EXPERIENCES: TExperience[] = [
 	{
 		id: 6,
 		company: "OfferUp",
@@ -93,7 +93,7 @@ export const experiences: IExperience[] = [
 	},
 ];
 
-export const projects: IProject[] = [
+export const PROJECTS: TProject[] = [
 	{
 		id: 8,
 		title: "Medical Image Processing",
@@ -209,7 +209,7 @@ export const projects: IProject[] = [
 	},
 ];
 
-export const skills: ISkill[] = [
+export const SKILLS: TSkill[] = [
 	{
 		name: "React Native",
 		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760710758/portfolio/skills/react-native_vmf3vl.svg",
@@ -272,7 +272,7 @@ export const skills: ISkill[] = [
 	},
 ];
 
-export const courses: ICourse[] = [
+export const COURSES: TCourse[] = [
 	{
 		id: 10,
 		name: "Flutter Móvil: De cero a experto",

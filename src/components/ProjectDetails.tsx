@@ -1,14 +1,14 @@
 import { GitHub } from "@mui/icons-material";
 import { motion } from "framer-motion";
-import useStore from "store";
-import { IProject } from "types";
-import Dot from "./Dot";
+import { useStore } from "@/store";
+import { TProject } from "@/types";
+import {Dot} from "@/components/icons";
 
 interface ProjectDetailsProps {
-	project: IProject;
+	project: TProject;
 }
 
-const ProjectDetails = ({ project }: ProjectDetailsProps) => {
+export const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 	const setShowProjectId = useStore(state => state.setShowProjectId);
 	const { deployment, description, image, repository, tags, title, tools } = project;
 
@@ -56,5 +56,3 @@ const ProjectDetails = ({ project }: ProjectDetailsProps) => {
 		</div>
 	);
 };
-
-export default ProjectDetails;

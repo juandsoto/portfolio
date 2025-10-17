@@ -1,5 +1,6 @@
 {
   "compilerOptions": {
+		"ignoreDeprecations": "6.0",
     "baseUrl": "src",
     "target": "ESNext",
     "useDefineForClassFields": true,
@@ -17,20 +18,8 @@
     "noEmit": true,
     "jsx": "react-jsx",
     "paths": {
-      "api": ["api"],
-      "api/*": ["api/*"],
-      "assets": ["assets"],
-      "assets/*": ["assets/*"],
-      "components": ["components"],
-      "components/*": ["components/*"],
-      "config": ["config"],
-      "config/*": ["config/*"],
-      "screens": ["screens"],
-      "screens/*": ["screens/*"],
-      "types": ["types"],
-      "types/*": ["types/*"]
+    	"@/*": ["*"]
     }
   },
   "include": ["src"],
-  "references": [{ "path": "./tsconfig.node.json" }]
 }

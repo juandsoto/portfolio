@@ -1,11 +1,11 @@
-import { IExperience, IOrientation } from "types";
-import Dot from "./Dot";
+import { TExperience, IOrientation } from "@/types";
+import {Dot} from "@/components/icons";
 import { useState } from "react";
 import { Circle } from "@mui/icons-material";
-import { useBreakpoint } from "hooks";
+import { useBreakpoint } from "@/hooks";
 
-interface Props {
-	experience: IExperience;
+interface ExperienceProps {
+	experience: TExperience;
 	orientation?: IOrientation;
 }
 
@@ -21,7 +21,7 @@ const COMPANY_CLASSNAME: Record<IOrientation, string> = {
 
 const MAX_DESCRIPTION_LENGTH = 600;
 
-const Experience = ({ experience, orientation = 'left' }: Props) => {
+export const Experience = ({ experience, orientation = 'left' }: ExperienceProps) => {
 	const { sm } = useBreakpoint();
 	const [isExpanded, setIsExpanded] = useState(false);
 
@@ -67,5 +67,3 @@ const Experience = ({ experience, orientation = 'left' }: Props) => {
 		</div>
 	);
 };
-
-export default Experience;

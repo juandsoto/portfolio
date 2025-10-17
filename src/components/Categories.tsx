@@ -1,11 +1,11 @@
-import { categories } from "data";
-import useStore from "store";
+import { CATEGORIES } from "@/data";
+import { useStore } from "@/store";
 
-const Categories = () => {
+export const Categories = () => {
 	const { selectedProjectCategories, toggleSelectedProjectCategories } = useStore();
 	return (
 		<ul className="categories__container flex items-center gap-4 overflow-x-auto">
-			{ categories.map(category => {
+			{ CATEGORIES.map(category => {
 				const isSelected = selectedProjectCategories.includes(category);
 				return (
 					<li key={ category }>
@@ -23,5 +23,3 @@ const Categories = () => {
 		</ul>
 	);
 };
-
-export default Categories;

@@ -1,15 +1,15 @@
-import { skills } from "data";
+import { SKILLS } from "@/data";
 import Slider, { Settings as SliderSettings } from "react-slick";
 import "slick-carousel/slick/slick-theme.css";
 import "slick-carousel/slick/slick.css";
 
-const Skills = () => {
+export const Skills = () => {
 	const settings: SliderSettings = {
 		infinite: true,
 		slidesToShow: 9,
-		slidesToScroll: skills.length,
+		slidesToScroll: SKILLS.length,
 		autoplay: true,
-		speed: skills.length * 1400,
+		speed: SKILLS.length * 1400,
 		autoplaySpeed: 0,
 		cssEase: "linear",
 		swipeToSlide: false,
@@ -44,9 +44,9 @@ const Skills = () => {
 			<div className="flex flex-col gap-4 px-4">
 				<h2 className="text-center font-bold">Skills</h2>
 			</div>
-			{/* @ts-expect-error working as it is */}
+			{/* @ts-expect-error - working as it is */}
 			<Slider { ...settings }>
-				{ skills.map(skill => (
+				{ SKILLS.map(skill => (
 					<div key={ skill.name } className="skill__container">
 						<img src={ skill.image } alt={ skill.name } />
 						<span className="skill__name">{ skill.name }</span>
@@ -56,5 +56,3 @@ const Skills = () => {
 		</div>
 	);
 };
-
-export default Skills;

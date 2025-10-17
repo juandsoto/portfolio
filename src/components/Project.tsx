@@ -1,12 +1,12 @@
 import { motion } from "framer-motion";
-import useStore from "store";
-import { IProject } from "types";
+import { useStore } from "@/store";
+import { TProject } from "@/types";
 
 interface ProjectProps {
-	project: IProject;
+	project: TProject;
 }
 
-const Project = ({ project }: ProjectProps) => {
+export const Project = ({ project }: ProjectProps) => {
 	const setShowProjectId = useStore(state => state.setShowProjectId);
 	const { id, image, title } = project;
 	return (
@@ -17,5 +17,3 @@ const Project = ({ project }: ProjectProps) => {
 		</motion.div>
 	);
 };
-
-export default Project;

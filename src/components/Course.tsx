@@ -1,10 +1,10 @@
-import { ICourse } from "types";
+import { TCourse} from "@/types"
 
-interface Props {
-	course: ICourse;
+interface CourseProps {
+	course: TCourse;
 }
 
-const Course = ({ course }: Props) => {
+export const Course = ({ course }: CourseProps) => {
 	const { certificate_link, course_link, image, name, platform } = course;
 
 	return (
@@ -28,5 +28,3 @@ const Course = ({ course }: Props) => {
 		</div>
 	);
 };
-
-export default Course;

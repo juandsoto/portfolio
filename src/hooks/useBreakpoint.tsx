@@ -11,7 +11,7 @@ const BREAKPOINTS: Record<Size, number> = {
 	"2xl": 1536
 };
 
-function useBreakpoint() {
+export const useBreakpoint = () => {
 	const [screenSize, setScreenSize] = useState<number>(window.innerWidth);
 	let timeoutId: NodeJS.Timeout;
 
@@ -39,5 +39,3 @@ function useBreakpoint() {
 		"2xl": () => screenSize <= BREAKPOINTS['2xl'],
 	};
 }
-
-export default useBreakpoint;

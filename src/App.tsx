@@ -1,12 +1,12 @@
-import { Footer, Header } from "components";
-import { Courses, Experiences, Main, Projects, Skills } from "screens";
+import { Footer, Header } from "@/components";
+import { Courses, Experiences, Banner, Projects, Skills } from "@/screens";
 
-function App() {
+export const App = () => {
   return (
     <div className="space-y-4 sm:space-y-16">
       <div className="max-w-screen-2xl mx-auto flex flex-col gap-4 sm:gap-16">
         <Header />
-        <Main />
+        <Banner />
         <Experiences />
         <Skills />
         <Projects />
@@ -16,5 +16,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

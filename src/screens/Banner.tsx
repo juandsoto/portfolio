@@ -1,8 +1,8 @@
 import { KeyboardArrowDown, PictureAsPdf } from "@mui/icons-material";
-import { Networking, Picture } from "components";
-import cv from "docs/resume.pdf";
+import { Networking, ProfileImage } from "@/components";
+import cv from "@/docs/resume.pdf";
 
-const Main = () => {
+export const Banner = () => {
   return (
     <div className="section flex flex-col">
       <div className="mt-24 flex justify-center lg:justify-start">
@@ -13,7 +13,7 @@ const Main = () => {
           <div className="flex-1 flex flex-col gap-2 sm:gap-8">
             <div className="flex items-center gap-4 sm:gap-8">
               <div className="lg:hidden w-8 xs:w-12 sm:w-16">
-                <Picture />
+                <ProfileImage />
               </div>
               <h1 className="font-bold tracking-wide">Juan David Soto</h1>
             </div>
@@ -44,12 +44,10 @@ const Main = () => {
             </div>
           </div>
           <div className="hidden lg:block w-56 2xl:w-72">
-            <Picture />
+            <ProfileImage />
           </div>
         </div>
       </div>
     </div>
   );
 };
-
-export default Main;

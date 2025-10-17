@@ -1,16 +1,16 @@
-import { Categories, Project, ProjectDetails } from "components";
-import { projects } from "data";
+import { Categories, Project, ProjectDetails } from "@/components";
+import { PROJECTS } from "@/data";
 import { AnimatePresence } from "framer-motion";
 import { useMemo } from "react";
-import useStore from "store";
+import { useStore } from "@/store";
 
-const Projects = () => {
+export const Projects = () => {
 	const showProjectId = useStore(state => state.showProjectId);
 	const selectedProjectCategories = useStore(state => state.selectedProjectCategories);
 
 	const filteredProjects = useMemo(() => {
-		if (!selectedProjectCategories.length) return projects;
-		return projects.filter(projects =>
+		if (!selectedProjectCategories.length) return PROJECTS;
+		return PROJECTS.filter(projects =>
 			selectedProjectCategories.every(tag => projects.tags.includes(tag.toLowerCase()))
 		);
 	}, [selectedProjectCategories]);
@@ -29,10 +29,8 @@ const Projects = () => {
 				) }
 			</div>
 			<AnimatePresence>
-				{ showProjectId !== null && <ProjectDetails project={ projects.find(project => project.id === showProjectId)! } /> }
+				{ showProjectId !== null && <ProjectDetails project={ PROJECTS.find(project => project.id === showProjectId)! } /> }
 			</AnimatePresence>
 		</div>
 	);
 };
-
-export default Projects;

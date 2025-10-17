@@ -1,6 +1,6 @@
 import { GitHub, LinkedIn } from '@mui/icons-material';
 
-function Networking() {
+export const Networking = () => {
 	return (
 		<>
 			<a className="icon social-media-button" href="https://github.com/juandsoto" target="_blank">
@@ -16,5 +16,3 @@ function Networking() {
 		</>
 	);
 }
-
-export default Networking;

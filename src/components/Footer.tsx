@@ -1,5 +1,5 @@
 
-function Footer() {
+export const Footer = () => {
 	return (
 		<footer className="w-full bg-dark text-light dark:bg-light/10 p-8 sm:flex gap-8 md:items-center md:justify-between">
 			<span className="text-center block">© { new Date().getFullYear() }
@@ -25,5 +25,3 @@ function Footer() {
 		</footer>
 	);
 }
-
-export default Footer;

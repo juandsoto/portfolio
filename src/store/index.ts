@@ -1,5 +1,5 @@
 import { mountStoreDevtool } from "simple-zustand-devtools";
-import { TCategory } from "types";
+import { TCategory } from "@/types";
 import { create } from "zustand";
 
 type Theme = "light" | "dark";
@@ -13,7 +13,15 @@ interface Store {
   toggleSelectedProjectCategories: (category: TCategory) => void;
 }
 
-const useStore = create<Store>((set, get) => {
+function setDocumentTheme(theme: Theme) {
+	if (theme === "dark") {
+		document.documentElement.classList.add("dark")
+	} else {
+		document.documentElement.classList.remove("dark")
+	}
+}
+
+export const useStore = create<Store>((set, get) => {
   const theme = localStorage.getItem("theme") as Theme;
   theme === "dark" && setDocumentTheme("dark");
 
@@ -47,10 +55,4 @@ const useStore = create<Store>((set, get) => {
   };
 });
 
-function setDocumentTheme(theme: Theme) {
-  theme === "dark" ? document.documentElement.classList.add("dark") : document.documentElement.classList.remove("dark");
-}
-
 mountStoreDevtool("Store", useStore);
-
-export default useStore;

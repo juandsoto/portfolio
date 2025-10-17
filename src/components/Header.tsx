@@ -1,11 +1,11 @@
 
 import { Close, DarkModeOutlined, HomeOutlined, LightModeOutlined, Menu } from "@mui/icons-material";
-import { Networking, Picture } from "components";
-import { useBreakpoint } from "hooks";
+import { Networking } from "@/components";
+import { useBreakpoint } from "@/hooks";
 import { useEffect, useState } from "react";
-import useStore from "store";
+import { useStore } from "@/store";
 
-function Header() {
+export const Header = () => {
 	const { theme, setTheme } = useStore();
 	const breakpoint = useBreakpoint();
 	const [isScrolled, setIsScrolled] = useState(false);
@@ -110,5 +110,3 @@ function Header() {
 		</div >
 	);
 }
-
-export default Header;
