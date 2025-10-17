@@ -1,16 +1,20 @@
-import { TCourse, TExperience, TProject, TSkill, TCategory } from "@/types";
+import { TCourse, TExperience, TProject, TSkill, TCategory } from '@/types';
 
-export const CATEGORIES: TCategory[] = ["algorithm", "AI", "cms", "game", 'optimization'];
+export const CATEGORIES: TCategory[] = ['algorithm', 'AI', 'cms', 'game', 'optimization'];
 
 export const EXPERIENCES: TExperience[] = [
-	{
-		id: 6,
-		company: "OfferUp",
-		company_link: "https://about.offerup.com/",
-		roles: [
-			{ name: "Software Development Engineer I", startDate: "November 2024", endDate: "Present" },
-		],
-		description: `
+  {
+    id: 6,
+    company: 'OfferUp',
+    company_link: 'https://about.offerup.com/',
+    roles: [
+      {
+        name: 'Software Development Engineer I',
+        startDate: 'November 2024',
+        endDate: 'Present',
+      },
+    ],
+    description: `
 			• Performed a Frontend Engineer role for OfferUp's mobile and web applications, enhancing performance, accessibility, and usability across platforms while continuously implementing new features from <strong>concept to launch.</strong></br>
 • Collaborated closely with product, designers, and backend engineers to deliver features from concept to production, contributing to an agile, cross-functional team.</br>
 • Actively contributed to the development of the Services vertical and took part in building the Services Posting feature <strong>from the ground up — from MVP design to a successful launch.</strong> The feature delivered strong results from the start and is on track to become one of the app's key revenue drivers, with its contribution growing steadily over time.</br>
@@ -19,169 +23,155 @@ export const EXPERIENCES: TExperience[] = [
 • Contributed to a fast-paced environment with weekly feature deliveries for both mobile and web applications.</br>
 • Collaborated on <strong>experimental features</strong> to validate ideas and optimize user experience through data-informed experimentation.</br>
 • Helped identify and fix bugs across devices, ensuring a polished user experience.`,
-		tools: ["React native", "Apollo GraphQL", "React", "Typescript", "Jest", "StatSig", "Bitrise and more"],
-		logoClassName: 'bg-[#01a97e]'
-	},
-	{
-		id: 4,
-		company: "Tanok Tech",
-		company_link: "https://www.tanok-tech.com/",
-		roles: [
-			{ name: "Junior Fullstack Developer", startDate: "May 2024", endDate: "November 2024" },
-		],
-		description: `
+    tools: ['React native', 'Apollo GraphQL', 'React', 'Typescript', 'Jest', 'StatSig', 'Bitrise and more'],
+    logoClassName: 'bg-[#01a97e]',
+  },
+  {
+    id: 4,
+    company: 'Tanok Tech',
+    company_link: 'https://www.tanok-tech.com/',
+    roles: [
+      {
+        name: 'Junior Fullstack Developer',
+        startDate: 'May 2024',
+        endDate: 'November 2024',
+      },
+    ],
+    description: `
 			Implementation of UI modules for the internal management web
 			application of a recycling company. Use of technologies such as
 			Nextjs, Prisma, YouTrack, Figma and PostgreSQL.`,
-		tools: ["Nextjs", "Prisma", "YouTrack", "Figma", "PostgreSQL", "Typescript"],
-		logoClassName: 'bg-[#3b7ae8]'
-	},
-	{
-		id: 5,
-		company: "ByLogic",
-		company_link: "https://www.bylogic.co/",
-		roles: [
-			{ name: "Software Engineer", startDate: "July 2023", endDate: "October 2024" },
-		],
-		description: `
+    tools: ['Nextjs', 'Prisma', 'YouTrack', 'Figma', 'PostgreSQL', 'Typescript'],
+    logoClassName: 'bg-[#3b7ae8]',
+  },
+  {
+    id: 5,
+    company: 'ByLogic',
+    company_link: 'https://www.bylogic.co/',
+    roles: [{ name: 'Software Engineer', startDate: 'July 2023', endDate: 'October 2024' }],
+    description: `
 			• Development of a trading broker platform as well as a comprehensive management application for administrators to
 			control critical data. User authentication, account resources through web3 technologies. The platform was built using React, Express, AWS and the TradingView API.</br>
 			• Mobile application as a trip planning tool using AI to create custom itineraries based on user preferences and their actual profile
 			configuration. Use of React Native, Express, AWS and OpenAI.`,
-		tools: ["React", "Express", "AWS", "React Native", "OpenAI", "Typescript"],
-		logoClassName: 'bg-[#fc5f27]'
-	},
-	{
-		id: 3,
-		company: "Holcim ADC",
-		company_link: "https://adc.holcim.com/",
-		roles: [
-			{ name: "Trainee Engineer", startDate: "January 2024", endDate: "July 2024" },
-			{ name: "Intern", startDate: "July 2023", endDate: "January 2024" }
-		],
-		description: `
+    tools: ['React', 'Express', 'AWS', 'React Native', 'OpenAI', 'Typescript'],
+    logoClassName: 'bg-[#fc5f27]',
+  },
+  {
+    id: 3,
+    company: 'Holcim ADC',
+    company_link: 'https://adc.holcim.com/',
+    roles: [
+      { name: 'Trainee Engineer', startDate: 'January 2024', endDate: 'July 2024' },
+      { name: 'Intern', startDate: 'July 2023', endDate: 'January 2024' },
+    ],
+    description: `
 			• Backend development using Java Spring Boot, handling payment transactions and related functions as well as implementing unit and integration tests to ensure its reliability.</br>
 			• Enhancement of Next.js-based web interfaces.</br>
 			• Refactoring Nodejs applications making use of AWS Lambda, S3, Api Gateway.`,
-		tools: ["Java", "Spring Boot", "AWS", "GitLab", "Nodejs", "Typescript", "Scrum"],
-		logoClassName: 'bg-[#95c130]'
-	},
-	{
-		id: 1,
-		company: "Ensolvers",
-		company_link: "https://www.ensolvers.com",
-		roles: [
-			{ name: "Trainee Engineer", startDate: "September 2022", endDate: "October 2022" },
-		],
-		description: `
+    tools: ['Java', 'Spring Boot', 'AWS', 'GitLab', 'Nodejs', 'Typescript', 'Scrum'],
+    logoClassName: 'bg-[#95c130]',
+  },
+  {
+    id: 1,
+    company: 'Ensolvers',
+    company_link: 'https://www.ensolvers.com',
+    roles: [{ name: 'Trainee Engineer', startDate: 'September 2022', endDate: 'October 2022' }],
+    description: `
 			Development of web application for Ensolvers' employee management.</br></br>
 			• Focused on developing a dedicated component within the application for tracking and managing off.</br>
 			• Designed and implemented features to allow employees to request and managers to approve or deny leave requests.`,
-		tools: ["React", "Typescript", "Scrum"],
-		logoClassName: 'bg-[#f49d38]'
-	},
-	{
-		id: 2,
-		company: "Universidad del Valle",
-		company_link: "https://www.univalle.edu.co/",
-		roles: [
-			{ name: "Software Engineering", startDate: "May 2019", endDate: "November 2024" },
-		],
-		description: "Software engineer with a five-year education from Universidad del Valle. This esteemed institution provided me with a comprehensive understanding of software development, covering diverse programming languages and cutting-edge technologies. The hands-on approach to problem-solving and collaborative projects during my time at the university has fueled my passion for coding.",
-		tools: [],
-		logoClassName: 'bg-[#ef1703]'
-	},
+    tools: ['React', 'Typescript', 'Scrum'],
+    logoClassName: 'bg-[#f49d38]',
+  },
+  {
+    id: 2,
+    company: 'Universidad del Valle',
+    company_link: 'https://www.univalle.edu.co/',
+    roles: [{ name: 'Software Engineering', startDate: 'May 2019', endDate: 'November 2024' }],
+    description:
+      'Software engineer with a five-year education from Universidad del Valle. This esteemed institution provided me with a comprehensive understanding of software development, covering diverse programming languages and cutting-edge technologies. The hands-on approach to problem-solving and collaborative projects during my time at the university has fueled my passion for coding.',
+    tools: [],
+    logoClassName: 'bg-[#ef1703]',
+  },
 ];
 
 export const PROJECTS: TProject[] = [
-	{
-		id: 8,
-		title: "Medical Image Processing",
-		description: `
+  {
+    id: 8,
+    title: 'Medical Image Processing',
+    description: `
 		<p>Applies segmentation algorithms to magnetic resonance images for helping disease detection, diagnosis, and treatment monitoring.</p>
 		</br>
 		<p>The project was developed as the final project of the Medical Image Processing class at Universidad del Valle, Software Engineer program.</p>`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514743/portfolio/Captura_de_pantalla_2024-05-07_190937_ylbbgu.png",
-		repository: "https://github.com/juandsoto/procesamiento-de-imagenes-medicas",
-		deployment: "",
-		tags: ["algorithm", "algorithm"],
-		tools: ["Python", "React", "TailwindCSS", "Typescript"],
-	},
-	{
-		id: 7,
-		title: "Constraint Programming",
-		description: `
+    image:
+      'https://res.cloudinary.com/dcaythx6e/image/upload/v1728514743/portfolio/Captura_de_pantalla_2024-05-07_190937_ylbbgu.png',
+    repository: 'https://github.com/juandsoto/procesamiento-de-imagenes-medicas',
+    deployment: '',
+    tags: ['algorithm', 'algorithm'],
+    tools: ['Python', 'React', 'TailwindCSS', 'Typescript'],
+  },
+  {
+    id: 7,
+    title: 'Constraint Programming',
+    description: `
 		<p>Optimize costs for the recording of actor scenes in a movie. The solution is found based on constraints using the Minizinc programming language.</p>
 		</br>
 		<p>The project was developed as the final project of the Constraint Programming class at Universidad del Valle, Software Engineer program.</p>
 		`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1728514748/portfolio/WhatsApp_Image_2024-10-09_at_17.57.48_qkodma.jpg",
-		repository: "https://github.com/juandsoto/proyecto-PPR",
-		deployment: "",
-		tags: ["optimization", "algorithm"],
-		tools: ["Minizinc", "React", "TailwindCSS", "Typescript"],
-	},
-	{
-		id: 1,
-		title: "War Horses",
-		description: `
+    image:
+      'https://res.cloudinary.com/dcaythx6e/image/upload/v1728514748/portfolio/WhatsApp_Image_2024-10-09_at_17.57.48_qkodma.jpg',
+    repository: 'https://github.com/juandsoto/proyecto-PPR',
+    deployment: '',
+    tags: ['optimization', 'algorithm'],
+    tools: ['Minizinc', 'React', 'TailwindCSS', 'Typescript'],
+  },
+  {
+    id: 1,
+    title: 'War Horses',
+    description: `
 		<p>Play against an artificial intelligence machine. The AI uses minimax algorithm with alpha-beta pruning to make its decisions.</p>
 		</br>
 		<p>The project was developed as one of the final projects of the Artificial Intelligence class at Universidad del Valle, Software Engineer program.</p>
 		`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672147779/portfolio/war_horses_ovqw2v.png",
-		repository: "https://github.com/juandsoto/war-horses",
-		deployment: "https://war-horses.vercel.app",
-		tags: ["ai", "game", "algorithm"],
-		tools: ["React", "TailwindCSS", "Typescript", "Zustand"],
-	},
-	{
-		id: 2,
-		title: "El Descanso",
-		description: `
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1672147779/portfolio/war_horses_ovqw2v.png',
+    repository: 'https://github.com/juandsoto/war-horses',
+    deployment: 'https://war-horses.vercel.app',
+    tags: ['ai', 'game', 'algorithm'],
+    tools: ['React', 'TailwindCSS', 'Typescript', 'Zustand'],
+  },
+  {
+    id: 2,
+    title: 'El Descanso',
+    description: `
 		<p>Manage clients, bookings and rooms for a hotel.</p>
 		</br>
 		<p>The project was developed as the final project of Software Development I classes at Universidad del Valle, Software Engineer program.</p>
 		`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672149717/portfolio/el_descanso_pnwg0i.png",
-		repository: "https://github.com/juandsoto/el-descanso",
-		deployment: "",
-		tags: ["cms"],
-		tools: [
-			"Django",
-			"Framer Motion",
-			"MaterialUI",
-			"Python",
-			"React",
-			"Typescript",
-		],
-	},
-	{
-		id: 3,
-		title: "CodersFAP",
-		description: `
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1672149717/portfolio/el_descanso_pnwg0i.png',
+    repository: 'https://github.com/juandsoto/el-descanso',
+    deployment: '',
+    tags: ['cms'],
+    tools: ['Django', 'Framer Motion', 'MaterialUI', 'Python', 'React', 'Typescript'],
+  },
+  {
+    id: 3,
+    title: 'CodersFAP',
+    description: `
 		<p>Saving and loan fund management system for an organization of people.</p>
 		</br>
 		<p>The project was developed as the final project of the Software Development II class at Universidad del Valle, Software Engineer program.</p>
 		`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1672150213/portfolio/codersfap_vjgzcd.png",
-		repository: "https://github.com/juandsoto/codersfap",
-		deployment: "",
-		tags: ["cms"],
-		tools: [
-			"ExpressJS",
-			"NodeJS",
-			"PostgreSQL",
-			"React",
-			"TailwindCSS",
-			"Typescript",
-			"Zustand",
-		],
-	},
-	{
-		id: 4,
-		title: "Mario Smart",
-		description:`
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1672150213/portfolio/codersfap_vjgzcd.png',
+    repository: 'https://github.com/juandsoto/codersfap',
+    deployment: '',
+    tags: ['cms'],
+    tools: ['ExpressJS', 'NodeJS', 'PostgreSQL', 'React', 'TailwindCSS', 'Typescript', 'Zustand'],
+  },
+  {
+    id: 4,
+    title: 'Mario Smart',
+    description: `
 			<p>Mario Smart is an AI-powered game where players can select a search algorithm to automatically find the princess.</p>
 			</br>
 			<p>The AI implements the following <strong>informed</strong> search algorithms:</p>
@@ -201,158 +191,160 @@ export const PROJECTS: TProject[] = [
 			</br>
 			<p>The project was developed as one of the final projects of the Artificial Intelligence class at Universidad del Valle, Software Engineer program.</p>
 			`,
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673013283/portfolio/mario_eskllf.png",
-		repository: "https://github.com/juandsoto/Mario_Smart_IA",
-		deployment: "https://mario-smart-ia.vercel.app",
-		tags: ["ai", "game", "algorithm"],
-		tools: ["Typescript"],
-	},
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673013283/portfolio/mario_eskllf.png',
+    repository: 'https://github.com/juandsoto/Mario_Smart_IA',
+    deployment: 'https://mario-smart-ia.vercel.app',
+    tags: ['ai', 'game', 'algorithm'],
+    tools: ['Typescript'],
+  },
 ];
 
 export const SKILLS: TSkill[] = [
-	{
-		name: "React Native",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760710758/portfolio/skills/react-native_vmf3vl.svg",
-	},
-	{
-		name: "GraphQL",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/graphQL_wjneok.svg",
-	},
-	{
-		name: "Typescript",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/typescript_vezgyu.svg",
-	},
-	{
-		name: "Jest",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760712320/portfolio/skills/jest-2-cropped_j2tuu8.svg",
-	},
-	{
-		name: "React",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/react_bw8atm.svg",
-	},
-	{
-		name: "Tanstack",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711943/portfolio/skills/splash-dark_sdpkii.png",
-	},
-	{
-		name: "AWS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705081165/portfolio/skills/vmpdg3stvh9ae0cfcugh.svg",
-	},
-	{
-		name: "PostgreSQL",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/postgresql_dztbty.svg",
-	},
-	{
-		name: "NextJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711435/portfolio/skills/next-js-cropped_bwjbft.svg",
-	},
-	{
-		name: "NodeJS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/nodejs_ty2tix.svg",
-	},
-	{
-		name: "MaterialUI",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016643/portfolio/skills/mui_wv3mrj.svg",
-	},
-	{
-		name: "Javascript",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/javascript_te45ox.svg",
-	},
-	{
-		name: "DynamoDB",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1760711374/portfolio/skills/aws-dynamodb-cropped_k3lehe.svg",
-	},
-	{
-		name: "Framer Motion",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/framer-motion_zrvzja.svg",
-	},
-	{
-		name: "TailwindCSS",
-		image: "https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/tailwindcss_zwu09i.svg",
-	},
+  {
+    name: 'React Native',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1760710758/portfolio/skills/react-native_vmf3vl.svg',
+  },
+  {
+    name: 'GraphQL',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/graphQL_wjneok.svg',
+  },
+  {
+    name: 'Typescript',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/typescript_vezgyu.svg',
+  },
+  {
+    name: 'Jest',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1760712320/portfolio/skills/jest-2-cropped_j2tuu8.svg',
+  },
+  {
+    name: 'React',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/react_bw8atm.svg',
+  },
+  {
+    name: 'Tanstack',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1760711943/portfolio/skills/splash-dark_sdpkii.png',
+  },
+  {
+    name: 'AWS',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1705081165/portfolio/skills/vmpdg3stvh9ae0cfcugh.svg',
+  },
+  {
+    name: 'PostgreSQL',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/postgresql_dztbty.svg',
+  },
+  {
+    name: 'NextJS',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1760711435/portfolio/skills/next-js-cropped_bwjbft.svg',
+  },
+  {
+    name: 'NodeJS',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016644/portfolio/skills/nodejs_ty2tix.svg',
+  },
+  {
+    name: 'MaterialUI',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016643/portfolio/skills/mui_wv3mrj.svg',
+  },
+  {
+    name: 'Javascript',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/javascript_te45ox.svg',
+  },
+  {
+    name: 'DynamoDB',
+    image:
+      'https://res.cloudinary.com/dcaythx6e/image/upload/v1760711374/portfolio/skills/aws-dynamodb-cropped_k3lehe.svg',
+  },
+  {
+    name: 'Framer Motion',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016642/portfolio/skills/framer-motion_zrvzja.svg',
+  },
+  {
+    name: 'TailwindCSS',
+    image: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1673016640/portfolio/skills/tailwindcss_zwu09i.svg',
+  },
 ];
 
 export const COURSES: TCourse[] = [
-	{
-		id: 10,
-		name: "Flutter Móvil: De cero a experto",
-		image: "https://import.cdn.thinkific.com/cdn-cgi/image/width=380,onerror=redirect/643563/courses/2177248/nBJfYecrQWmUQyxveZRo_FLUTTER-NEW-COVER.jpg",
-		platform: "https://res.cloudinary.com/dcaythx6e/image/upload/v1716995082/portfolio/DMpsgyZ4_400x400_sf5550.jpg",
-		course_link: "https://cursos.devtalles.com/courses/flutter-movil-cero-a-experto",
-		certificate_link: "https://cursos.devtalles.com/certificates/jzih4vuxks",
-	},
-	{
-		id: 9,
-		name: "React PRO: Lleva tus bases al siguiente nivel",
-		image: "https://img-c.udemycdn.com/course/480x270/4301065_2e02.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/react-pro/",
-		certificate_link: "https://www.udemy.com/certificate/UC-a9d86812-012d-4fa5-b6ef-787382ba81f2/",
-	},
-	{
-		id: 8,
-		name: "Talento JuvenTIC",
-		image: "https://talento.juventic.co/images/logo-talento.png",
-		platform: "https://res.cloudinary.com/dcaythx6e/image/upload/v1705092207/portfolio/rhlbrry4saye0ljnearg.png",
-		course_link: "https://talento.juventic.co/",
-		certificate_link: "",
-	},
-	{
-		id: 7,
-		name: "Angular: De cero a experto",
-		image: "https://img-c.udemycdn.com/course/480x270/3662358_4d6e.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/angular-fernando-herrera/",
-		certificate_link: "https://www.udemy.com/certificate/UC-46e79e7d-a1a5-40cf-af3a-2ba8bd5062bb/",
-	},
-	{
-		id: 6,
-		name: "Node: De cero a experto",
-		image: "https://img-c.udemycdn.com/course/480x270/1562070_d426_3.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/node-de-cero-a-experto/",
-		certificate_link: "https://www.udemy.com/certificate/UC-176b084b-cb1b-4f29-ae28-dc5f05e5a7bc/",
-	},
-	{
-		id: 5,
-		name: "Spring Framework 5 & Spring Boot 2 desde cero a experto 2022",
-		image: "https://img-c.udemycdn.com/course/480x270/1388250_e9ac_6.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/spring-framework-5/",
-		certificate_link: "https://www.udemy.com/certificate/UC-7b65f8fe-88bc-4ecc-8c08-1c9b7ccfccdf/",
-	},
-	{
-		id: 4,
-		name: "Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero",
-		image: "https://img-c.udemycdn.com/course/480x270/2516170_d229_2.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/aprende-javascript-es9-html-css3-y-nodejs-desde-cero/",
-		certificate_link: "https://www.udemy.com/certificate/UC-78318b3e-96ae-43dc-b2ec-8004edea7d14/",
-	},
-	{
-		id: 3,
-		name: "Combinatorics and Probability",
-		image:
-			"https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/98/8fb81076a011e79d073ba265e37f90/logo_comb_800x800.png",
-		platform: "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png",
-		course_link: "https://www.coursera.org/learn/combinatorics",
-		certificate_link: "https://www.coursera.org/account/accomplishments/verify/Q2KTSGRX7ZYK",
-	},
-	{
-		id: 2,
-		name: "Introduction to Graph Theory",
-		image:
-			"https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ee/7e3b00762f11e789d3c9a04c0e14ee/logo_graphs_800x800-1.png",
-		platform: "https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png",
-		course_link: "https://www.coursera.org/learn/graphs",
-		certificate_link: "https://www.coursera.org/account/accomplishments/verify/3ZN5JGMBCQTG",
-	},
-	{
-		id: 1,
-		name: "Java Programming for Complete Beginners",
-		image: "https://img-c.udemycdn.com/course/480x270/1535678_0ce9_7.jpg",
-		platform: "https://cdn.worldvectorlogo.com/logos/udemy-3.svg",
-		course_link: "https://www.udemy.com/course/java-programming-tutorial-for-beginners/",
-		certificate_link: "https://www.udemy.com/certificate/UC-da0e7ad2-1d58-40a3-927b-93615cccb0a8/",
-	},
+  {
+    id: 10,
+    name: 'Flutter Móvil: De cero a experto',
+    image:
+      'https://import.cdn.thinkific.com/cdn-cgi/image/width=380,onerror=redirect/643563/courses/2177248/nBJfYecrQWmUQyxveZRo_FLUTTER-NEW-COVER.jpg',
+    platform: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1716995082/portfolio/DMpsgyZ4_400x400_sf5550.jpg',
+    course_link: 'https://cursos.devtalles.com/courses/flutter-movil-cero-a-experto',
+    certificate_link: 'https://cursos.devtalles.com/certificates/jzih4vuxks',
+  },
+  {
+    id: 9,
+    name: 'React PRO: Lleva tus bases al siguiente nivel',
+    image: 'https://img-c.udemycdn.com/course/480x270/4301065_2e02.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/react-pro/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-a9d86812-012d-4fa5-b6ef-787382ba81f2/',
+  },
+  {
+    id: 8,
+    name: 'Talento JuvenTIC',
+    image: 'https://talento.juventic.co/images/logo-talento.png',
+    platform: 'https://res.cloudinary.com/dcaythx6e/image/upload/v1705092207/portfolio/rhlbrry4saye0ljnearg.png',
+    course_link: 'https://talento.juventic.co/',
+    certificate_link: '',
+  },
+  {
+    id: 7,
+    name: 'Angular: De cero a experto',
+    image: 'https://img-c.udemycdn.com/course/480x270/3662358_4d6e.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/angular-fernando-herrera/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-46e79e7d-a1a5-40cf-af3a-2ba8bd5062bb/',
+  },
+  {
+    id: 6,
+    name: 'Node: De cero a experto',
+    image: 'https://img-c.udemycdn.com/course/480x270/1562070_d426_3.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/node-de-cero-a-experto/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-176b084b-cb1b-4f29-ae28-dc5f05e5a7bc/',
+  },
+  {
+    id: 5,
+    name: 'Spring Framework 5 & Spring Boot 2 desde cero a experto 2022',
+    image: 'https://img-c.udemycdn.com/course/480x270/1388250_e9ac_6.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/spring-framework-5/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-7b65f8fe-88bc-4ecc-8c08-1c9b7ccfccdf/',
+  },
+  {
+    id: 4,
+    name: 'Aprende Javascript ES9, HTML, CSS3 y NodeJS desde cero',
+    image: 'https://img-c.udemycdn.com/course/480x270/2516170_d229_2.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/aprende-javascript-es9-html-css3-y-nodejs-desde-cero/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-78318b3e-96ae-43dc-b2ec-8004edea7d14/',
+  },
+  {
+    id: 3,
+    name: 'Combinatorics and Probability',
+    image:
+      'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/98/8fb81076a011e79d073ba265e37f90/logo_comb_800x800.png',
+    platform: 'https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png',
+    course_link: 'https://www.coursera.org/learn/combinatorics',
+    certificate_link: 'https://www.coursera.org/account/accomplishments/verify/Q2KTSGRX7ZYK',
+  },
+  {
+    id: 2,
+    name: 'Introduction to Graph Theory',
+    image:
+      'https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-course-photos.s3.amazonaws.com/ee/7e3b00762f11e789d3c9a04c0e14ee/logo_graphs_800x800-1.png',
+    platform: 'https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-194x194.png',
+    course_link: 'https://www.coursera.org/learn/graphs',
+    certificate_link: 'https://www.coursera.org/account/accomplishments/verify/3ZN5JGMBCQTG',
+  },
+  {
+    id: 1,
+    name: 'Java Programming for Complete Beginners',
+    image: 'https://img-c.udemycdn.com/course/480x270/1535678_0ce9_7.jpg',
+    platform: 'https://cdn.worldvectorlogo.com/logos/udemy-3.svg',
+    course_link: 'https://www.udemy.com/course/java-programming-tutorial-for-beginners/',
+    certificate_link: 'https://www.udemy.com/certificate/UC-da0e7ad2-1d58-40a3-927b-93615cccb0a8/',
+  },
 ];

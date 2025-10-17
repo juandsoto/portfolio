@@ -1,5 +1,5 @@
-import { Footer, Header } from "@/components";
-import { Courses, Experiences, Banner, Projects, Skills } from "@/screens";
+import { Footer, Header } from '@/components';
+import { Courses, Experiences, Banner, Projects, Skills } from '@/screens';
 
 export const App = () => {
   return (
@@ -15,4 +15,4 @@ export const App = () => {
       <Footer />
     </div>
   );
-}
+};

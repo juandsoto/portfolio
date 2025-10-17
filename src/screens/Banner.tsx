@@ -1,6 +1,7 @@
-import { KeyboardArrowDown, PictureAsPdf } from "@mui/icons-material";
-import { Networking, ProfileImage } from "@/components";
-import cv from "@/docs/resume.pdf";
+import { KeyboardArrowDown, PictureAsPdf } from '@mui/icons-material';
+
+import { Networking, ProfileImage } from '@/components';
+import cv from '@/docs/resume.pdf';
 
 export const Banner = () => {
   return (

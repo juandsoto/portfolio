@@ -23,7 +23,7 @@ export interface TExperience {
   logoClassName: string;
 }
 
-export type TOrientation = "left" | "right";
+export type TOrientation = 'left' | 'right';
 
 export interface TProject {
   id: number;
@@ -41,4 +41,4 @@ export interface TSkill {
   image: string;
 }
 
-export type TCategory = "algorithm" | "AI" | "cms" | "game" | 'optimization';
+export type TCategory = 'algorithm' | 'AI' | 'cms' | 'game' | 'optimization';

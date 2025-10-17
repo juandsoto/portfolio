@@ -1,8 +1,9 @@
-import { mountStoreDevtool } from "simple-zustand-devtools";
-import { TCategory } from "@/types";
-import { create } from "zustand";
+import { mountStoreDevtool } from 'simple-zustand-devtools';
+import { create } from 'zustand';
 
-type Theme = "light" | "dark";
+import { TCategory } from '@/types';
+
+type Theme = 'light' | 'dark';
 
 interface Store {
   theme: Theme;
@@ -14,16 +15,19 @@ interface Store {
 }
 
 function setDocumentTheme(theme: Theme) {
-	if (theme === "dark") {
-		document.documentElement.classList.add("dark")
-	} else {
-		document.documentElement.classList.remove("dark")
-	}
+  if (theme === 'dark') {
+    document.documentElement.classList.add('dark');
+  } else {
+    document.documentElement.classList.remove('dark');
+  }
 }
 
 export const useStore = create<Store>((set, get) => {
-  const theme = localStorage.getItem("theme") as Theme;
-  theme === "dark" && setDocumentTheme("dark");
+  const theme = localStorage.getItem('theme') as Theme;
+
+  if (theme === 'dark') {
+    setDocumentTheme('dark');
+  }
 
   return {
     showProjectId: null,
@@ -33,26 +37,29 @@ export const useStore = create<Store>((set, get) => {
       const categories = get().selectedProjectCategories.includes(category)
         ? get().selectedProjectCategories.filter(c => c !== category)
         : [...get().selectedProjectCategories, category];
+
       return set({
         selectedProjectCategories: categories,
       });
     },
-    theme: (localStorage.getItem("theme") as Theme) ?? "light",
+    theme: (localStorage.getItem('theme') as Theme) ?? 'light',
     setTheme: theme => {
       switch (theme) {
-        case "light":
-          localStorage.setItem("theme", "light");
-          setDocumentTheme("light");
+        case 'light':
+          localStorage.setItem('theme', 'light');
+          setDocumentTheme('light');
+
           return set({ theme });
-        case "dark":
-          localStorage.setItem("theme", "dark");
-          setDocumentTheme("dark");
+        case 'dark':
+          localStorage.setItem('theme', 'dark');
+          setDocumentTheme('dark');
+
           return set({ theme });
         default:
-          return set({ theme: "light" });
+          return set({ theme: 'light' });
       }
     },
   };
 });
 
-mountStoreDevtool("Store", useStore);
+mountStoreDevtool('Store', useStore);
